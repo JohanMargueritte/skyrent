@@ -1,0 +1,288 @@
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.lds-dual-ring {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: #00b7ef transparent #00b7ef transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.style-scrollbar::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.style-scrollbar::-webkit-scrollbar
+{
+    width: 2px;
+    background-color: #F5F5F5;
+}
+
+.style-scrollbar::-webkit-scrollbar-thumb
+{
+    background-color: #00b7ef;
+}
+
+.agreement-form-page {
+    font-size: 16px;
+}
+.agreement-form-page .form-control {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.agreement-form-page [readonly],
+.agreement-form-page input:read-only {
+    background-color: #e7e7e7;
+    cursor: not-allowed;
+}
+.agreement-form-page .form-check-inline .form-check-input {
+    position: static;
+    margin-top: 0;
+    margin-right: 6px;
+    margin-left: 0;
+}
+.agreement-form-page label {
+    color: #333;
+}
+.agreement-form-page .input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+.agreement-form-page .input-group > .form-control {
+    position: relative;
+    -ms-flex: 1 1 0%;
+    flex: 1 1 0%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+.agreement-form-page .input-group>.form-control:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.agreement-form-page .input-group-append, .input-group-prepend {
+    display: -ms-flexbox;
+    display: flex;
+}
+.agreement-form-page .input-group-append {
+    margin-left: -1px;
+}
+.agreement-form-page .input-group > .input-group-append > .input-group-text {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.agreement-form-page .input-group-text {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+.agreement-form-page .form-check-inline {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 0;
+    margin-right: 12px;
+}
+.agreement-form-page .form-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.agreement-form label {
+    font-weight: 400;
+    font-size: 16px;
+}
+.agreement-form h1 {
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+.agreement-form h1,
+.agreement-form h3,
+.agreement-form .progress-counter{
+    color: #00b7ef;
+}
+.agreement-form .form-check-inline label {
+    margin-bottom: 0;
+}
+.agreement-form .form-group.row {
+    margin-bottom: 0;
+}
+.agreement-form-progress {
+    position: relative;
+    margin-bottom: 16px;
+}
+.agreement-form-progress > .progress {
+    height: 2px;
+    margin-bottom: 0;
+}
+.agreement-form-progress > .progress > .progress-bar {
+    background-color: #00b7ef;
+}
+.agreement-form-main-content {
+    min-height: 100px;
+    transition: all 200ms linear;
+}
+.agreement-form-action-buttons .btn {
+    background-color: #00b7ef;
+    border-radius: 32px;
+    width: 180px;
+    height: 40px;
+    margin-left: 32px;
+    border: 2px solid transparent;
+    transition: all 300ms linear;
+    font-size: 16px;
+}
+.agreement-form-action-buttons .btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.agreement-form-action-buttons .btn.unactive {
+    visibility: hidden;
+    opacity: 0;
+}
+.agreement-form-action-buttons .btn > span {
+    color: #fff;
+}
+.agreement-form-action-buttons .btn:active {
+    opacity: 0.3;
+}
+.agreement-form-action-buttons .btn:not(:disabled):hover {
+    border-color: #00b7ef;
+    background-color: #fff;
+}
+.agreement-form-action-buttons .btn:not(:disabled):hover > span {
+    color: #00b7ef;
+}
+.agreement-form-action-buttons .btn i {
+    transition: all 400ms ease;
+    visibility: hidden;
+    width: 0;
+    display: inline-block;
+    opacity: 0;
+    color: #00b7ef;;
+}
+.agreement-form-action-buttons .btn:not(:disabled):hover i {
+    visibility: visible;
+    width: 32px;
+    opacity: 1;
+}
+.agreement-form-step-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
+.agreement-form-step-content label:not(.col-form-label) {
+    min-width: 110px;
+}
+.agreement-form-step-body {
+    display: none;
+    height: 100vh;
+    max-height: calc(100vh - 300px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 16px 32px;
+}
+.agreement-form-action-buttons {
+    box-shadow: 0 -5px 5px -5px #3333;
+    position: relative;
+    z-index: 9;
+    display: flex;
+    justify-content: flex-end;
+}
+.tenant-item-header {
+    border-bottom: 1px solid #00b7ef;
+    position: relative;
+}
+.tenant-item-header > .close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 1;
+}
+.tenants-list > .tenant-item:first-child .tenant-item-header {
+    display: none;
+}
+.agreement-services-list .form-check-inline {
+    margin-bottom: 16px;
+}
+@media (min-width: 576px) {
+    .agreement-form-page .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+.included-service > i {
+    display: inline-block;
+    line-height: 24px;
+    vertical-align: middle;
+}
+.amenity-item > i,
+.tenant-insurance > i,
+.parking-mention > i,
+.included-service > i{
+    color: #00b7ef;
+    margin-right: 8px;
+    font-size: 18px;
+}
+.amenity-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.parking-mention > span {
+    font-style: italic;
+}
+/*.parking-mention {*/
+/*    margin: 16px 0 8px;*/
+/*}*/

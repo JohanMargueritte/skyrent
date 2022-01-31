@@ -1,0 +1,40 @@
+.home-slider-btn img {
+  width: 28px !important;
+  height: 28px !important;
+}
+#property-filter-form1 {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+#property-filter-form1 .form-group {
+  display: none;
+}
+#property-filter-form1 input[type='text'] {
+  padding: 0 0 0 10px;
+  margin: 0 16px;
+  height: calc(100% - 8px);
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#property-filter-form1 #search-btn-main {
+  position: static;
+}
+#property-filter-form1 input[type='text']::placeholder {
+  font-size: 16px;
+  line-height: 1;
+}
+#property-filter-form1 #current-location-trigger {
+  font-size: 18px;
+  color: #00b7ef;
+  background: transparent;
+  position: relative;
+  right: 8px;
+}
+.main-search-wrapper .input-list {
+  padding: 0;
+  max-width: 600px;
+}

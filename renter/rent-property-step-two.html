@@ -1,0 +1,701 @@
+    <!DOCTYPE html>
+
+    <html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="/images/favicon.ico">
+        <title>Louer une propriété étape 2</title>
+        <link href="/assets/3182f4dc/css/normalize.css" rel="stylesheet">
+<link href="/assets/3182f4dc/css/ion.rangeSlider.css" rel="stylesheet">
+<link href="/assets/3182f4dc/css/ion.rangeSlider.skinHTML5.css" rel="stylesheet">
+<link href="/assets/1b40f416/css/bootstrap.css" rel="stylesheet">
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/animate.css" rel="stylesheet">
+<link href="/css/normalize.css" rel="stylesheet">
+<link href="/css/owl.carousel.min.css" rel="stylesheet">
+<link href="/css/ui-layout.css" rel="stylesheet">
+<link href="/css/homeSearch.css" rel="stylesheet">
+<link href="/css/ui-screen.css" rel="stylesheet">
+<link href="/css/agreement-form.css" rel="stylesheet">
+<link href="/css/listing-maps-acl.css" rel="stylesheet">
+<link href="/css/custom-acl.css" rel="stylesheet">        <meta name="csrf-param" content="_srfrontendCSRF">
+<meta name="csrf-token" content="wSxyEAsPsz2vDaLWvjhHnOS9fpC_JXyU0v4r197QuLmTeBtDeyKeR8c4yqDPfjb9qOUR2eVOI92f02yWkIL00g==">
+                <script>
+            var os = navigator.platform;
+            document.cookie = "cuos=" + os;
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '485403209006216');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=485403209006216&ev=PageView&noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167595448-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167595448-1');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Start Script ReachLocal -->
+        <script type="text/javascript" src="//cdn.rlets.com/capture_configs/2aa/8ba/637/f0a4876bbb260a72c7ab7d7.js" async="async"></script>
+        <!-- End Script ReachLocal -->
+        <script src="https://js.stripe.com/v3/"></script>
+            </head>
+
+    <body class="skyrent-body" data-spy="scroll" data-target=".how-it-works-tabs-btns" data-offset="162">
+        <div class="bb-alert" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+
+    <div class="wrapper">
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top skyrent-navbar ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://www.skyrent.ca/"><img src="/images/skyrent-logo.png" alt=""></a>            <div id="headerSticky" class="search-header">
+                <div class="input-list-search">
+                    <form id="property-filter-form2" action="https://www.skyrent.ca/property/listing" method="GET">                    <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"  autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal" aria-invalid="false">
+                    <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                    <button id="search-btn-top" type="submit" class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="nav-round-btn">
+                <a id="btn-popup-login" class="popuplink" href="https://www.skyrent.ca/site/login">Se connecter</a>            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Afficher/masquer la navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+
+                    <a href="https://www.skyrent.ca/about-us">À propos de nous</a>                </li>
+                <li>
+                    <a href="https://www.skyrent.ca/how-it-works">Comment ça marche</a>                </li>
+                <!--  <li>
+					<a href="https://www.skyrent.ca/site/support">Support</a>                </li> -->
+                <li>
+                    <a href="https://www.skyrent.ca/site/contact-us">Nous contacter</a>                </li>
+                
+
+                
+            </ul>
+        </div>
+</nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username" />
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd" />
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="/images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="/images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </header>
+
+        
+        
+<section class="sr-page-main propertyq3 pt-0 add-margin sr-form rent-property-step-two">
+	<a id="btn-popup-login" class="popuplink hidden" href="https://www.skyrent.ca/site/login">Se connecter</a>	<form id="custom-form" name="f1" action="/renter/rent-property-step-two" method="post" data-pjax>
+<input type="hidden" name="_srfrontendCSRF" value="wSxyEAsPsz2vDaLWvjhHnOS9fpC_JXyU0v4r197QuLmTeBtDeyKeR8c4yqDPfjb9qOUR2eVOI92f02yWkIL00g=="><input type="hidden" name="renter_screen" value="2">    <div class="container">
+        <div class="sr-page-content">      
+            <div class="block text-center">
+                <div class="page-title-2 border-0 mb-0">
+					<div class="back-btn-link renterbtn">
+						<a class="" href="https://www.skyrent.ca/renter/rent-property">						<i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+						Retour
+						</a>					</div>
+					<div class="page-title-2-inner rentertitle">
+<!--						<br/>Hello --><!--. Let’s find you --><!--.-->
+					</div>
+				</div>
+            </div>
+
+            <section class="block">
+                <div class="row">
+                    <div class="col-sm-12 col-md-offset-1 col-md-10 mb-0">
+                        <div class="form-group input-field search-field-control">
+							<div class="form-group field-renterpropertysearch-location required">
+<label class="active" for="renterpropertysearch-location">Recherche par lieu, ville, code postal</label><input type="text" id="renterpropertysearch-location" class="search-icon form-control" name="RenterPropertySearch[location]" value="Montréal, QC, Canada" autocomplete="off" placeholder="" aria-required="true"><p class="help-block help-block-error"></p>
+</div>
+							<div style="display: none">
+								<div class="form-group field-renterpropertysearch-street_number">
+<input type="hidden" id="renterpropertysearch-street_number" class="form-control" name="RenterPropertySearch[street_number]" value="" data-geo="street_number">
+</div><div class="form-group field-renterpropertysearch-route">
+<input type="hidden" id="renterpropertysearch-route" class="form-control" name="RenterPropertySearch[route]" value="" data-geo="route">
+</div><div class="form-group field-renterpropertysearch-neighbourhood">
+<input type="hidden" id="renterpropertysearch-neighbourhood" class="form-control" name="RenterPropertySearch[neighbourhood]" value="" data-geo="neighborhood">
+</div><div class="form-group field-renterpropertysearch-sublocality">
+<input type="hidden" id="renterpropertysearch-sublocality" class="form-control" name="RenterPropertySearch[sublocality]" value="" data-geo="sublocality">
+</div><div class="form-group field-renterpropertysearch-locality">
+<input type="hidden" id="renterpropertysearch-locality" class="form-control" name="RenterPropertySearch[locality]" value="Montréal" data-geo="locality">
+</div><div class="form-group field-renterpropertysearch-region">
+<input type="hidden" id="renterpropertysearch-region" class="form-control" name="RenterPropertySearch[region]" value="Québec" data-geo="administrative_area_level_1">
+</div><div class="form-group field-renterpropertysearch-postal_code">
+<input type="hidden" id="renterpropertysearch-postal_code" class="form-control" name="RenterPropertySearch[postal_code]" value="" data-geo="postal_code">
+</div>							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-offset-1 col-md-4">
+                        <div class="form-group input-field">
+							<div class="form-group field-renterpropertysearch-bedrooms required">
+<select id="renterpropertysearch-bedrooms" class="form-control" name="RenterPropertySearch[bedrooms]" aria-required="true">
+<option value="">Chambres</option>
+<option value="0" selected>Studio</option>
+<option value="1">1 chambre</option>
+<option value="5">1 chambre ou +</option>
+<option value="2">2 chambres</option>
+<option value="6">2 chambres ou +</option>
+<option value="3">3 chambres</option>
+<option value="7">3 chambres ou +</option>
+<option value="4">4 chambres</option>
+<option value="8">4 chambres ou +</option>
+</select><p class="help-block help-block-error"></p>
+</div>                        </div>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-offset-2 col-md-4">
+                        <div class="form-group input-field">
+							<div class="form-group field-renterpropertysearch-bathrooms required">
+<select id="renterpropertysearch-bathrooms" class="form-control" name="RenterPropertySearch[bathrooms]" aria-required="true">
+<option value="">Salles de bain</option>
+<option value="1" selected>1 salle de bain</option>
+<option value="5">1 salle de bain ou +</option>
+<option value="2">2 salles de bain</option>
+<option value="6">2 salles de bain ou +</option>
+<option value="3">3 salles de bain</option>
+<option value="7">3 salles de bain ou +</option>
+<option value="4">4 salles de bain</option>
+<option value="8">4 salles de bain ou +</option>
+</select><p class="help-block help-block-error"></p>
+</div>                        </div>            
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-offset-1 col-md-4">
+                        <div class="form-group input-field">
+							<div class="form-group field-renterpropertysearch-parking_type">
+<select id="renterpropertysearch-parking_type" class="form-control" name="RenterPropertySearch[parking_type]">
+<option value="">Stationnement</option>
+<option value="1" selected>Pas nécessaire</option>
+<option value="2">1 place</option>
+<option value="3">2 places</option>
+<option value="4">3 places ou +</option>
+</select><p class="help-block help-block-error"></p>
+</div>                        </div>
+                    </div>
+<!--                    <div class="col-xs-6 col-sm-6 col-md-offset-2 col-md-4">-->
+<!--                        <div class="form-group input-field">-->
+<!--							--><!--                        </div>            -->
+<!--                    </div>-->
+                </div>
+
+            </section>
+
+            <section class="block">
+                <div class="row">
+                    <div class="col-sm-12 col-md-offset-1 col-md-10 mt-40">
+                        <h4 class="form-heading-small">Quel est votre loyer souhaité ?</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-offset-1 col-md-10">
+                        <div class="form-group">
+                            <div class="custom-radio-inline mt-60 text-center">
+								<div class="form-group field-renterpropertysearch-rent_mode required">
+<input type="hidden" name="RenterPropertySearch[rent_mode]" value=""><div id="renterpropertysearch-rent_mode" role="radiogroup" aria-required="true"><div class="custom-radio rentermb-0"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[rent_mode]" value="1"  checked="checked" ><span class="radiomark"></span><span>Mensuel</span></label> </div>
+</div><p class="help-block help-block-error"></p>
+</div>                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-10  col-sm-offset-1 renter-property-step">
+                        <div class="form-group">
+							<div class="form-group field-renterpropertysearch-rent_max_price">
+
+<input type="hidden" id="renterpropertysearch-rent_max_price" class="form-control" name="RenterPropertySearch[rent_max_price]" value="3300">
+
+<p class="help-block help-block-error"></p>
+</div><div class="form-group field-renterpropertysearch-rent_min_price required">
+
+<input type="text" id="renterpropertysearch-rent_min_price" class="form-control" name="RenterPropertySearch[rent_min_price]" value="0;7000" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-offset-1 col-md-10 mt-80">
+                        <h4 class="form-heading-small">Quelle taille d'appartement ou de copropriété recherchez-vous ? </h4>
+                    </div>
+                </div>
+
+				<div class="row">
+                    <div class="col-sm-12 col-md-offset-1 col-md-10">
+                        <div class="form-group">
+                            <div class="custom-radio-inline mt-60 text-center">
+								<div class="form-group field-renterpropertysearch-property_size_unit required">
+<input type="hidden" name="RenterPropertySearch[property_size_unit]" value=""><div id="renterpropertysearch-property_size_unit" role="radiogroup" aria-required="true"><div class="custom-radio rentermb-0"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[property_size_unit]" value="1"  checked="checked" ><span class="radiomark"></span><span>Pieds carrés</span></label> </div></div><p class="help-block help-block-error"></p>
+</div>                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="row">
+                    <div class="col-sm-10  col-sm-offset-1 renter-property-step">
+                        <div class="form-group">
+							<div class="form-group field-renterpropertysearch-property_size_to">
+
+<input type="hidden" id="renterpropertysearch-property_size_to" class="form-control" name="RenterPropertySearch[property_size_to]" value="2000">
+
+<p class="help-block help-block-error"></p>
+</div><div class="form-group field-renterpropertysearch-property_size_from required">
+
+<input type="text" id="renterpropertysearch-property_size_from" class="form-control" name="RenterPropertySearch[property_size_from]" value="925;2000" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="block renter-about-block mt-40">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-2 gray-color border-0 pb-0 mb-0 text-center">
+                            <div class="page-title-2-inner">Parlez-nous un peu plus de vous</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12"><h5 class="form-heading blue-color">Avez-vous un animal de compagnie ?</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="custom-radio-inline  property-check-gap radio-mb-8">
+                                    <div class="form-group">                                        
+										<div class="form-group field-renterpropertysearch-pet required">
+<input type="hidden" name="RenterPropertySearch[pet]" value=""><div id="renterpropertysearch-pet" role="radiogroup" aria-required="true"><div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[pet]" value="1"  ><span class="radiomark"></span><span>Oui</span></label> </div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[pet]" value="2"  checked="checked" ><span class="radiomark"></span><span>Non</span></label> </div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[pet]" value="3"  ><span class="radiomark"></span><span>Non applicable</span></label> </div></div><p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12"><h5 class="form-heading blue-color">Fumez-vous ?</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="custom-radio-inline  property-check-gap radio-mb-8">
+                                    <div class="form-group">                                        
+										<div class="form-group field-renterpropertysearch-smoke required">
+<input type="hidden" name="RenterPropertySearch[smoke]" value=""><div id="renterpropertysearch-smoke" role="radiogroup" aria-required="true"><div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[smoke]" value="1"  ><span class="radiomark"></span><span>Oui</span></label></div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[smoke]" value="2"  checked="checked" ><span class="radiomark"></span><span>Non</span></label></div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[smoke]" value="3"  ><span class="radiomark"></span><span>Non applicable</span></label></div></div><p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12"><h5 class="form-heading blue-color">Durée du bail</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="custom-radio-inline column-5 error-msg-block left-0">
+                                    <div class="form-group">                                        
+										<div class="form-group field-renterpropertysearch-lease_term_id required">
+<input type="hidden" name="RenterPropertySearch[lease_term_id]" value=""><div id="renterpropertysearch-lease_term_id" role="radiogroup" aria-required="true"><div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[lease_term_id]" value="1"  checked="checked" ><span class="radiomark"></span><span>1 à 5 mois</span></label> </div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[lease_term_id]" value="2"  ><span class="radiomark"></span><span>6 à 11 mois</span></label> </div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[lease_term_id]" value="3"  ><span class="radiomark"></span><span>12 à 24 mois</span></label> </div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[lease_term_id]" value="4"  ><span class="radiomark"></span><span>24 ou +</span></label> </div></div><p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-12"><h5 class="form-heading blue-color subletting-heading">Êtes-vous intéressé par la sous-location ?</h5></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="custom-radio-inline  property-check-gap radio-mb-8">
+                                    <div class="form-group">                                        
+										<div class="form-group field-renterpropertysearch-sublet required">
+<input type="hidden" name="RenterPropertySearch[sublet]" value=""><div id="renterpropertysearch-sublet" role="radiogroup" aria-required="true"><div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[sublet]" value="1"  ><span class="radiomark"></span><span>Oui</span></label> </div>
+<div class="custom-radio"><label class=""><input type="radio" class="form-control" name="RenterPropertySearch[sublet]" value="2"  checked="checked" ><span class="radiomark"></span><span>Non</span></label> </div></div><p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+			<div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <div class="form-group">
+						<button type="submit" class="outline-btn-rounded mt-30">Rechercher <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>                    </div>
+                </div>
+            </div>
+			        </div>
+		</form>    </div>
+</section>
+<!-- Renter Rent Type Modal -->
+<div id="renterRateTypeModal" class="modal sr-modal sr-modal-small fade" role="dialog">
+    <div class="modal-dialog sr-modal-small pr-modal">
+        <div class="modal-content">
+            <div class="close-modal-btn">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-innerbox mt-20 mb-10 renter-type-box">
+                    <div class="modal-heading-main mb-20">                              
+                        <div class="modal-heading">SkyRent est rapide, facile et sans tracas.  </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="block renter-type-inner renter-type-inner-b">
+                                <h4 class="form-heading text-center sky-color">Navigateur</h4>
+                                <p class="renter-type-subheading">En tant que navigateur occasionnel, vous pouvez effectuer les opérations suivantes :</p>
+                                <ul class="renter-type-list mt-20 mb-60">
+                                    <li>Voir les propriétés disponibles</li>
+                                    <li>Créer une liste de souhaits</li>
+                                    <li>Partager votre liste de souhaits avec vos amis et votre famille</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="block renter-type-inner beforeline">
+                                <h4 class="form-heading text-center sky-color">Locataire enregistré</h4>
+                                <p class="renter-type-subheading">En tant que locataire enregistré, vous pouvez</p>
+                                <ul class="renter-type-list mt-20 mb-20">
+                                    <li>Voir les propriétés disponibles</li>
+                                    <li>Prendre rendez-vous pour visiter une propriété spécifique</li>
+                                    <li>Préparer une offre de location</li>
+                                    <li>Déposer une offre de location</li>
+                                    <li>Compléter les étapes préliminaires du processus de location (vérification du crédit et des antécédents) et sauvegarder vos informations pour une utilisation future</li>
+                                    <li>Enregistrer vos recherches</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn"> 
+                        <div class="row">
+                            <div class="col-sm-6 mt-10">
+                                <button type="button" id="got-it-btn" class="outline-btn-rounded">S'inscrire maintenant</button>                   
+                            </div> 
+                            <div class="col-sm-6 mt-10">
+                                <button type="button" id="got-it-btn" class="outline-btn-rounded"  data-dismiss="modal">Continuer en tant que navigateur</button>                       
+                            </div>                   
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <footer class="footer-main">
+    <div class="footer-inner">
+        <div class="container-fluid">
+            <div class="footer-left">
+                <div class="brand">
+                     SkyRent
+                 </div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="https://www.skyrent.ca/">Accueil</a>                    </li>
+                    <li>
+                        <a href="https://www.skyrent.ca/about-us">À propos de nous</a>                    </li>
+                    <li>
+                        <a href="https://www.skyrent.ca/how-it-works">Comment ça marche</a>                    </li>
+                    <li>
+                        <a href="https://www.skyrent.ca/site/contact-us">Nous contacter</a>                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="/images/skyrent-logo.png" alt="">                </div>
+                <div class="copyright">
+                     Copyright ©2021 SkyRent Inc Tous droits réservés.
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="privacy-policy">
+                    <a href="https://www.skyrent.ca/privacy-policy">Politique de confidentialité</a>                    <span></span>
+                    <a href="https://www.skyrent.ca/terms-of-use">Conditions d'utilisation</a>                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <div class="modal sr-modal fade" id="ajaxModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal sr-modal fade" id="ajaxModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyBeoRc8BuP4FOqz2zL3pu75-pJKyxVlcdw&amp;libraries=places"></script>
+<script src="/assets/dba63cdf/jquery.js"></script>
+<script src="/assets/1366a38b/yii.js"></script>
+<script src="/assets/1366a38b/yii.validation.js"></script>
+<script src="/assets/3182f4dc/js/ion.rangeSlider.js"></script>
+<script src="/assets/1366a38b/yii.activeForm.js"></script>
+<script src="/js/jquery.geocomplete.js"></script>
+<script src="/assets/1b40f416/js/bootstrap.js"></script>
+<script src="/js/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.fancybox.js"></script>
+<script src="/js/owl.carousel.min.js"></script>
+<script src="/js/owl.carousel2.thumbs.min.js"></script>
+<script src="/js/mdb.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap-datepicker.min.js"></script>
+<script src="/js/jquery.blockUI.js"></script>
+<script src="/js/bootbox/bootbox.min.js"></script>
+<script src="/js/form-serialize-object.js"></script>
+<script src="/js/sr_custom.js"></script>
+<script src="/js/html5-form-validation-polyfill.js"></script>
+<script src="/js/agreement-form.js"></script>
+<script src="/js/custom-acl.js"></script>
+<script src="/js/checkout.js"></script>
+<script>jQuery(function ($) {
+$("#renterpropertysearch-rent_min_price").ionRangeSlider({"skin":"round","min":0,"max":7000,"step":50,"prefix":"$","prettify_separator":",","prettify_enabled":"true","onChange":
+							function(data) {
+								$("#renterpropertysearch-rent_max_price").val(data.to)
+							}
+						   ,"type":"double"});
+$("#renterpropertysearch-property_size_from").ionRangeSlider({"skin":"round","min":100,"max":5000,"step":1,"prefix":"","prettify_separator":",","prettify_enabled":"true","onChange":
+							function(data) {
+								$("#renterpropertysearch-property_size_to").val(data.to)
+							}
+						   ,"type":"double"});
+jQuery('#custom-form').yiiActiveForm([{"id":"renterpropertysearch-location","name":"location","container":".field-renterpropertysearch-location","input":"#renterpropertysearch-location","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Le lieu, la ville et le code postal ne peuvent pas être vides."});yii.validation.string(value, messages, {"message":"Le lieu, la ville et le code postal doivent être une chaîne de caractères.","min":3,"tooShort":"Le lieu, la ville et le code postal doivent contenir au moins 3 caractères.","skipOnEmpty":1});yii.validation.string(value, messages, {"message":"Le lieu, la ville et le code postal doivent être une chaîne de caractères.","max":100,"tooLong":"Le lieu, la ville et le code postal doivent contenir au maximum 100 caractères.","skipOnEmpty":1});value = yii.validation.trim($form, attribute, [], value);}},{"id":"renterpropertysearch-bedrooms","name":"bedrooms","container":".field-renterpropertysearch-bedrooms","input":"#renterpropertysearch-bedrooms","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Le nombre de chambres doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Le nombre de chambres ne peut pas être vide."});}},{"id":"renterpropertysearch-bathrooms","name":"bathrooms","container":".field-renterpropertysearch-bathrooms","input":"#renterpropertysearch-bathrooms","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Le nombre de salles de bain doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Le nombre de salles de bain ne peut pas être vide."});}},{"id":"renterpropertysearch-parking_type","name":"parking_type","container":".field-renterpropertysearch-parking_type","input":"#renterpropertysearch-parking_type","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Le type de stationnement doit être un nombre entier.","skipOnEmpty":1});}},{"id":"renterpropertysearch-rent_mode","name":"rent_mode","container":".field-renterpropertysearch-rent_mode","input":"#renterpropertysearch-rent_mode","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Le mode de location doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Le mode de location ne peut pas être vide."});}},{"id":"renterpropertysearch-rent_min_price","name":"rent_min_price","container":".field-renterpropertysearch-rent_min_price","input":"#renterpropertysearch-rent_min_price","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Le prix de location minimum ne peut pas être vide."});}},{"id":"renterpropertysearch-property_size_unit","name":"property_size_unit","container":".field-renterpropertysearch-property_size_unit","input":"#renterpropertysearch-property_size_unit","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"La superficie doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"La superficie ne peut pas être vide."});}},{"id":"renterpropertysearch-property_size_from","name":"property_size_from","container":".field-renterpropertysearch-property_size_from","input":"#renterpropertysearch-property_size_from","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"La superficie minimum ne peut pas être vide."});}},{"id":"renterpropertysearch-pet","name":"pet","container":".field-renterpropertysearch-pet","input":"#renterpropertysearch-pet","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Animaux de compagnie doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Animaux de compagnie ne peuvent pas être vide."});}},{"id":"renterpropertysearch-smoke","name":"smoke","container":".field-renterpropertysearch-smoke","input":"#renterpropertysearch-smoke","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Fumeurs doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Fumeurs ne peut pas être vide."});}},{"id":"renterpropertysearch-lease_term_id","name":"lease_term_id","container":".field-renterpropertysearch-lease_term_id","input":"#renterpropertysearch-lease_term_id","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"L'ID de la durée du bail doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"L'ID de la durée du bail ne peut pas être vide."});}},{"id":"renterpropertysearch-sublet","name":"sublet","container":".field-renterpropertysearch-sublet","input":"#renterpropertysearch-sublet","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Sous-location doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Sous-location ne peut pas être vide."});}}], []);
+$(document).ready(function(){
+    var url='https://www.skyrent.ca/renter/premium';
+	var login_required = '';
+
+	if(login_required) {
+		$('#btn-popup-login').trigger('click');
+	}
+
+    $('#premium-btn').click(function(e){    
+            $('#renterRateTypeModal').modal();
+          //window.location='https://www.skyrent.ca/renter/premium';  
+//        var form = $('<form action="' + url + '" method="post">' + $('#custom-form').html() +
+//       '<input type="hidden" name="from" value="step_2" />' +
+//        '</form>');
+//    console.log(form);
+//        $('body').append(form);
+//        form.submit();    
+    });
+
+    $('#got-it-btn').click(function(e){
+        window.location='https://www.skyrent.ca/renter/premium'; 
+    });
+
+	$("#renterpropertysearch-location").geocomplete({
+		details: "form",
+		detailsAttribute:"data-geo",
+		types: ["geocode", "establishment"],
+		componentRestrictions: {country: "CA"},
+		markerOptions: {
+			draggable: true
+		}
+	}).bind("geocode:result");
+});    
+jQuery('#property-filter-form2').yiiActiveForm([], []);
+});</script>        </body>
+
+    <script>
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                //message: '<h1><i class="fa fa-spinner fa-spin"></i></h1>',
+                message: `<div class="loaderImage"><img src="/images/loader.gif " alt=""></div>`,
+                css: {
+                    border: 'none',
+                    padding: '10px',
+                    backgroundColor: '#fff',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    background: 'none',
+                    opacity: 1,
+                    color: '#fff'
+                }
+            });
+        });
+
+        $(document).ajaxStop($.unblockUI);
+
+        $(document).ready(function () {
+            /* To clear pop up data after pop up close */
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#ajaxModel").html('');
+            });
+
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+        /* end */
+        $(document).ready(function () {
+            $.common.PathUrl = 'https://www.skyrent.ca/';
+            $.common.init({
+                'baseUrl': 'https://www.skyrent.ca/',
+                'admin': false,
+                'customLoaded': false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overlay').modal('show');
+            setTimeout(function () {
+                $('#overlay').modal('hide');
+            }, 20000);
+            $("#overlay .alert").animate({
+                opacity: 1.0
+            }, 20000).fadeOut("slow");
+        });
+    </script>
+    <style>
+        #overlay .alert {
+            border-radius: 30px 30px 30px 30px !important;
+        }
+    </style>
+
+    </html>
