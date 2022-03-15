@@ -59,14 +59,14 @@
                             $('input[name="Psf[pcode]"]').val(element.postal_code);
                             $('input[name="Psf[is_banner]"]').val(element.postal_code);
                         } else {
-                            alert('Erreur inattendue. Nous ne pouvons pas obtenir votre position.');
+                            alert('Unexpected error. We cannot get your location.');
                         }
                     });
                 }, function () {
-                    alert("Il n'y a pas de prise en charge de la localisation sur cet appareil ou celle-ci est désactivée. Veuillez vérifier vos paramètres.");
+                    alert("There is no location support on this device or it is disabled. Please check your settings.");
                 });
             }else {
-                alert("Il n'y a pas de prise en charge de la localisation sur cet appareil ou celle-ci est désactivée. Veuillez vérifier vos paramètres.");
+                alert("There is no location support on this device or it is disabled. Please check your settings.");
             }
          });
      }

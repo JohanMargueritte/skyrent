@@ -3,7 +3,7 @@ var authWindow;
 var isAdmin = false;
 var $modal;
 var serTimeArr;
-var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche");
+var d_names = new Array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday");
 (function ($) {
     $.common = {
         settings: [],
@@ -22,14 +22,14 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
             $(document).on('click', '.delete-record', function () {
                 var frmthis = this;
                 bootbox.confirm({
-                    message: "Êtes-vous sûr de vouloir supprimer cet élément ?",
+                    message: "Are you sure you want to delete this item?",
                     buttons: {
                         confirm: {
-                            label: 'Oui',
+                            label: 'Yes',
                             className: 'btn-primary'
                         },
                         cancel: {
-                            label: 'Non',
+                            label: 'No',
                             className: 'btn-danger'
                         }
                     },
@@ -117,9 +117,9 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
                 var url = $(this).attr("data-url");
 
                 if (keys == '') {
-                    alert('Veuillez sélectionner des lignes pour effectuer cette action spécifique.');
+                    alert('Please select rows to perform this specific action.');
                 } else {
-                    var res = confirm('Êtes-vous sûr ? Vous souhaitez supprimer le ou les enregistrements sélectionnés ?');
+                    var res = confirm('Are you sure? You want to delete selected record(s)?');
                     if (res) {
                         $.ajax({
                             type: 'POST',
@@ -214,7 +214,7 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
                         if (typeof loading_text !== typeof undefined && loading_text !== false) {
                             $(frm).find('button[type="submit"]').html(loading_text);
                         } else {
-                            $(frm).find('button[type="submit"]').html('Sauvegarde ... ');
+                            $(frm).find('button[type="submit"]').html('Saving ... ');
                         }
                         $(frm).find('button[type="submit"]').attr('disabled', 'disabled');
                     }
@@ -275,7 +275,7 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
                     }
                     if ($(obj).val() !== '' && $(obj).val() === selectedSerVal) {
                         service.val('');
-                        alert('Vous avez déjà choisi ce service.');
+                        alert('You have already choose this service.');
                     }
                 });
 
@@ -311,7 +311,7 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
                                 var x = JSON.parse(data);
                                 if (typeof x.status !== "undefined") {
                                     if (x.status === 0) {
-                                        alert('Il n'y a pas de fournisseur pour ce service, veuillez sélectionner un autre service.');
+                                        alert('There is no service provider for this service, please select other service.');
                                         service.val('');
                                     }
                                     staffDropDown.html(x.options);
@@ -373,7 +373,7 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
                                 var x = JSON.parse(data);
                                 if (typeof x.status !== "undefined") {
                                     if (x.status === 0) {
-                                        alert('Il n'y a pas de service pour ce fournisseur, veuillez sélectionner un autre fournisseur de services.');
+                                        alert('There is no service for this service provider, please select other service provider.');
                                         member.val('');
                                     }
                                     serviceDropDown.html(x.options);
@@ -400,7 +400,7 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
 
             $(document).on('click', '.bookingCancel', function () {
                 var booking_id = $(this).data('booking_id');
-                if (confirm('Êtes-vous sûr de vouloir annuler cette réservation ?')) {
+                if (confirm('Are you sure you want to cancel this booking?')) {
                     $.ajax({
                         type: 'POST',
                         url: PathUrl + 'customer/booking-cancel',
@@ -441,9 +441,9 @@ var d_names = new Array("lundi", "mardi", "mercredi", "jeudi", "vendredi", "same
             $(document).on('click', '.memberService', function () {
                 var isService = $(this).data('is_service');
                 if (isService == 1) {
-                    alert('Il n'y a pas de fournisseur pour ce service, veuillez sélectionner un autre service.');
+                    alert('There is no service provider for this service, please select other service.');
                 } else {
-                    alert('Il n'y a pas de service pour ce fournisseur, veuillez sélectionner un autre fournisseur de services.');
+                    alert('There is no service for this service provider, please select other service provider.');
                 }
 
                 return false;
@@ -493,7 +493,7 @@ $(document).ajaxComplete(function (e, res, settings) {
     }
 
     if (res.status == 404) {
-        alert('Une erreur est survenue avec votre requête. \n ' + res.responseText);
+        alert('There was an error with your request. \n ' + res.responseText);
         window.location = PathUrl;
     }
 });
@@ -534,7 +534,7 @@ $('.delete-gallery-image').on('click', function (e) {
         var link = $(this).data('link'); // url
         var parentDiv = $(this).parent('div').parent('div'); // remove div after delete
 
-        if (confirm("Êtes-vous sûr de vouloir supprimer cette image ?")) {
+        if (confirm("Are you sure you want to remove this image?")) {
             $.ajax({
                 url: link,
                 type: 'post',
@@ -569,8 +569,8 @@ $(document).ready(function () {
     // Configure/customize these variables.
     var showChar = 300;  // How many characters are shown by default
     var ellipsestext = "...";
-    var moretext = "Afficher la suite";
-    var lesstext = "Afficher moins";
+    var moretext = "Read more";
+    var lesstext = "Read less";
 
 
     $('.more').each(function () {
@@ -889,7 +889,7 @@ $(document).ready(function () {
             console.log(url);
             insertParam('property_view', 'list', url);
         } else {
-            //alert('Quelque chose ne va pas !');
+            //alert('Something goes wrong !');
             return false;
         }
     });
@@ -901,7 +901,7 @@ $(document).ready(function () {
             console.log(url);
             insertParam('property_view', 'map', url);
         } else {
-            //alert('Quelque chose ne va pas !');
+            //alert('Something goes wrong !');
             return false;
         }
     });
