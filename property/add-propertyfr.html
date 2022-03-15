@@ -1,0 +1,588 @@
+    <!DOCTYPE html>
+
+    <html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="../images/favicon.ico">
+        <title>Ajouter une propriété</title>
+        <link href="../assets/48cbc7e5/css/bootstrap.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/owl.carousel.min.css" rel="stylesheet">
+<link href="../css/ui-layoutfr.css" rel="stylesheet">
+<link href="../css/homeSearchfr.css" rel="stylesheet">
+<link href="../css/ui-screen.css" rel="stylesheet">
+<link href="../css/agreement-form.css" rel="stylesheet">
+<link href="../css/listing-maps-acl.css" rel="stylesheet">
+<link href="../css/custom-acl.css" rel="stylesheet">        <meta name="csrf-param" content="_srfrontendCSRF">
+<meta name="csrf-token" content="">
+                <script>
+            var os = navigator.platform;
+            document.cookie = "cuos=" + os;
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '485403209006216');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=485403209006216&ev=PageView&noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167595448-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167595448-1');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Start Script ReachLocal -->
+        <script type="text/javascript" src="https://cdn.rlets.com/capture_configs/2aa/8ba/637/f0a4876bbb260a72c7ab7d7.js" async="async"></script>
+        <!-- End Script ReachLocal -->
+        <script src="https://js.stripe.com/v3/"></script>
+                    <!--Start of watson Script-->
+            <script>
+                window.watsonAssistantChatOptions = {
+                    integrationID: "0517d608-000c-43d2-a2af-0822acef6008", // The ID of this integration.
+                    region: "eu-fr", // The region your integration is hosted in.
+                    serviceInstanceID: "8dbc97ee-45e6-456a-9483-a9c186b53845", // The ID of your service instance.
+                    onLoad: function(instance) { instance.render(); }
+                };
+                setTimeout(function(){
+                    const t=document.createElement('script');
+                    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                    document.head.appendChild(t);
+                });
+            </script>
+            <!--End of watson-->
+            </head>
+
+    <body class="" data-spy="scroll" data-target=".how-it-works-tabs-btns" data-offset="162">
+        <div class="bb-alert" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+
+    <div class="h-100" style="height:100%;">
+        <header class="main-header">
+                    </header>
+
+        
+            <header></header>
+    <div class="container-fluid landlord-workflow-container">
+        <div class="col-sm-6 left-panel col-12">
+            <div class="">
+                <button type="button" class="navbar-toggle collapsed fixed-top" data-toggle="collapse"
+                        data-target="#navbar-landlord"
+                        aria-expanded="false" aria-controls="navbar"><span class="sr-only">Afficher/masquer la navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="left-panel-logo">
+                    <a class="navbar-brand" href="../indexfr.html"><img src="../images/skyrent-logo-home.png" alt=""></a>
+                </div>
+            </div>
+            <div class="left-panel-title">
+                <div class="row justify-content-center px-10">
+                    <h1>Quel type de propriété répertoriez-vous ?</h1>
+                </div>
+            </div>
+            <div class="col-sm-6 landlord-small-device-nav">
+                <div class="flex-row">
+    <div class="navbar-header">
+        <div id="headerSticky" class="search-header">
+            <div class="input-list-search">
+                <form id="property-filter-form2" action="listingfr.html" method="GET">                <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"
+                       autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal"
+                       aria-invalid="false">
+                <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                <button id="search-btn-top" type="submit"
+                        class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                    <i class="fa fa-search"></i>
+                </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="navbar-landlord" class="navbar-collapse collapse medium-size-device">
+        <div class="d-flex flex-row landlord-navbar">
+            <div class="header-new">
+                <a href="../about-usfr.html">À propos de nous</a>            </div><!-- Abous Us -->
+            <div class="header-new">
+                <a href="../how-it-worksfr.html">Comment ça marche</a>            </div><!-- How It Works -->
+            <div class="header-new">
+                <a href="../supportfr.html">Support</a>            </div><!-- Support -->
+            <div class="header-new">
+                <a href="../contact-usfr.html">Nous contacter</a>            </div><!-- Contact Us -->
+
+                                <div class="header-new">
+                        <a href="../property/add-propertyfr.html">Ajouter une propriété</a>                    </div>
+                    
+
+                            <div class="header-new dropdown">
+                                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown"
+                       role="button" aria-haspopup="true" aria-expanded="false">
+                        Landlord <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="" href="../profilefr.html" tabindex="-1">Mon profil</a>                        </li>
+                        <li>
+                            <a class="" href="../paymentsfr.html" tabindex="-1">Paiements</a>                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="multi-level-dropdown " tabindex="-1"
+                               href="#">
+                                Propriétés <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                                                            <ul class="dropdown-menu" >
+                                    <li>
+                                        <a class="" href="../property/pending-offersfr.html" tabindex="-1">Offres en attente</a>                                    </li>
+                                    <li>
+                                        <a class="" href="../property/listed-propertiesfr.html" tabindex="-1">Propriétés répertoriées</a>                                    </li>
+                                    <li>
+                                        <a class="" href="../property/schedule-visitsfr.html" tabindex="-1">Visites programmées</a>                                    </li>
+                                </ul>
+                                
+                        </li>
+                    </ul>
+                </div>
+                
+            <div class="nav-round-btn-new">
+                <a href="../logout">Se déconnecter</a>            </div>
+        </div>
+    </div>
+
+    <div class="progress" style="height: 5px; margin-left: -15px ">
+        <div class="progress-bar" role="progressbar"
+             style="width: 0%; background:#00b7ef"
+             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+</div>
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username" />
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd" />
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="col-sm-6 landlord-large-device-nav">
+            <div class="flex-row">
+    <div class="navbar-header">
+        <div id="headerSticky" class="search-header">
+            <div class="input-list-search">
+                <form id="property-filter-form2" action="listingfr.html" method="GET">                <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"
+                       autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal"
+                       aria-invalid="false">
+                <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                <button id="search-btn-top" type="submit"
+                        class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                    <i class="fa fa-search"></i>
+                </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="navbar-landlord" class="navbar-collapse collapse medium-size-device">
+        <div class="d-flex flex-row landlord-navbar">
+            <div class="header-new">
+                <a href="../about-usfr.html">À propos de nous</a>            </div><!-- Abous Us -->
+            <div class="header-new">
+                <a href="../how-it-worksfr.html">Comment ça marche</a>            </div><!-- How It Works -->
+            <div class="header-new">
+                <a href="../supportfr.html">Support</a>            </div><!-- Support -->
+            <div class="header-new">
+                <a href="../contact-usfr.html">Nous contacter</a>            </div><!-- Contact Us -->
+
+                                <div class="header-new">
+                        <a href="add-propertyfr.html">Ajouter une propriété</a>                    </div>
+                    
+
+                            <div class="header-new dropdown">
+                                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown"
+                       role="button" aria-haspopup="true" aria-expanded="false">
+                        Landlord <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="" href="../profilefr.html" tabindex="-1">Mon profil</a>                            </li>
+                            <li>
+                                <a class="" href="../paymentsfr.html" tabindex="-1">Paiements</a>                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="multi-level-dropdown active" tabindex="-1" href="#">
+                                    Propriétés <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                                                    <ul class="dropdown-menu" style=display:block>
+                                        <li>
+                                            <a class="" href="../property/pending-offersfr.html" tabindex="-1">Offres en attente</a>                                        </li>
+                                        <li>
+                                            <a class="" href="../property/listed-propertiesfr.html" tabindex="-1">Propriétés répertoriées</a>                                        </li>
+                                        <li>
+                                            <a class="active" href="../property/schedule-visitsfr.html" tabindex="-1">Visites programmées</a>                                    </li>
+                                </ul>
+                                
+                        </li>
+                    </ul>
+                </div>
+                
+            <div class="nav-round-btn-new">
+                <a href="../logout">Se déconnecter</a>            </div>
+        </div>
+    </div>
+
+    <div class="progress" style="height: 5px; margin-left: -15px ">
+        <div class="progress-bar" role="progressbar"
+             style="width: 0%; background:#00b7ef"
+             aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+</div>
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username"/>
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd"/>
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"><a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-6">
+
+            <section class="sr-form">
+                <div class="container landlord-container">
+                    <div class="sr-page-content">
+                        <form id="w0" action="add-propertyfr.html" method="post" data-pjax>
+<input type="hidden" name="_srfrontendCSRF" value="yEzMB0u0FtfB9ZQY3G0ggLiZR0PvEP2D5lQ4y9OGlQOifadQDdAn5ISQ3HuVP2vS8ckfGYJAv8-DFnW4ucmjdA=="><input type="hidden" name="property_screen" value="1">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-8">
+                                <div class="row radio-bm custom-radio-inline error-msg-block two-field">
+                                    <div class="form-group field-property-property_type_id required">
+<input type="hidden" name="Property[property_type_id]" value=""><div id="property-property_type_id" role="radiogroup" aria-required="true"><div class="col-12 appartment-button " id="button-10"><div class="custom-radio"><label class="label-class" id="10"><span class="landlord-span-logo apartmentorcondo-logo"></span><input type="radio" class="form-control" name="Property[property_type_id]" value="10"  ><span class="landlord-span-label">Appartement ou copropriété</span></label> </div></div>
+<div class="col-12 appartment-button " id="button-18"><div class="custom-radio"><label class="label-class" id="18"><span class="landlord-span-logo detached-logo"></span><input type="radio" class="form-control" name="Property[property_type_id]" value="18"  ><span class="landlord-span-label">Isolée</span></label> </div></div>
+<div class="col-12 appartment-button " id="button-19"><div class="custom-radio"><label class="label-class" id="19"><span class="landlord-span-logo townhouse-logo"></span><input type="radio" class="form-control" name="Property[property_type_id]" value="19"  ><span class="landlord-span-label">Maison en rangée</span></label> </div></div>
+<div class="col-12 appartment-button " id="button-20"><div class="custom-radio"><label class="label-class" id="20"><span class="landlord-span-logo semi-detached-logo"></span><input type="radio" class="form-control" name="Property[property_type_id]" value="20"  ><span class="landlord-span-label">Jumelée</span></label> </div></div>
+<div class="col-12 appartment-button " id="button-25"><div class="custom-radio"><label class="label-class" id="25"><span class="landlord-span-logo cottageorvacationproperty-logo"></span><input type="radio" class="form-control" name="Property[property_type_id]" value="25"  ><span class="landlord-span-label">Chalet ou propriété de villégiature</span></label> </div></div>
+<div class="col-12 appartment-button " id="button-41"><div class="custom-radio"><label class="label-class" id="41"><span class="landlord-span-logo nobuilding-logo"></span><input type="radio" class="form-control" name="Property[property_type_id]" value="41"  ><span class="landlord-span-label">Aucun bâtiment</span></label> </div></div></div><p class="help-block help-block-error"></p>
+</div>                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3 text-center">
+                                <div class="form-group">
+                                    <button type="submit" class="outline-btn-rounded mt-60">Continuer <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>                                </div>
+                            </div>
+                        </div>
+                        </form>                    </div>
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    </div>
+        <div class="modal sr-modal fade" id="ajaxModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal sr-modal fade" id="ajaxModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+        <script src="../assets/dd593c97/jquery.js"></script>
+<script src="../assets/1366a38b/yii.js"></script>
+<script src="../assets/1366a38b/yii.activeForm.js"></script>
+<script src="../assets/1366a38b/yii.validation.js"></script>
+<script src="../assets/48cbc7e5/js/bootstrap.js"></script>
+<script src="../js/jquery.fancybox.pack.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/owl.carousel2.thumbs.min.js"></script>
+<script src="../js/mdb.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap-datepicker.min.js"></script>
+<script src="../js/jquery.blockUI.js"></script>
+<script src="../js/bootbox/bootbox.min.js"></script>
+<script src="../js/form-serialize-object.js"></script>
+<script src="../js/sr_customfr.js"></script>
+<script src="../js/html5-form-validation-polyfill.js"></script>
+<script src="../js/agreement-form.js"></script>
+<script src="../js/custom-aclfr.js"></script>
+<script src="../js/checkout.js"></script>
+<script>jQuery(function ($) {
+jQuery('#property-filter-form2').yiiActiveForm([], []);
+jQuery('#w0').yiiActiveForm([{"id":"property-property_type_id","name":"property_type_id","container":".field-property-property_type_id","input":"#property-property_type_id","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^\s*[+-]?\d+\s*$/,"message":"Le type de propriété doit être un nombre entier.","skipOnEmpty":1});yii.validation.required(value, messages, {"message":"Le type de propriété ne peut pas être vide."});}}], []);
+
+var allLabels = document.getElementsByClassName("label-class");
+        for (var i = 0; i < allLabels.length; i++){
+           var labelId = allLabels.item(i).id;
+           var button = document.getElementById("button-"+labelId);
+           allLabels.item(i).style.width = button.clientWidth - 50 + 'px';
+        };
+
+    $(document).on("change", "input[type='radio']", function () {
+        var allButtons = document.getElementsByClassName("appartment-button");
+        for (var i = 0; i < allButtons.length; i++){
+            allButtons.item(i).classList.remove("checked");
+        }
+        var elem = document.getElementById("button-"+this.value);
+        elem.classList.add("checked");
+    });
+});</script>        </body>
+
+    <script>
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                //message: '<h1><i class="fa fa-spinner fa-spin"></i></h1>',
+                message: `<div class="loaderImage"><img src="../images/loader.gif " alt=""></div>`,
+                css: {
+                    border: 'none',
+                    padding: '10px',
+                    backgroundColor: '#fff',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    background: 'none',
+                    opacity: 1,
+                    color: '#fff'
+                }
+            });
+        });
+
+        $(document).ajaxStop($.unblockUI);
+
+        $(document).ready(function () {
+            /* To clear pop up data after pop up close */
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#ajaxModel").html('');
+            });
+
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+        /* end */
+        $(document).ready(function () {
+            $.common.PathUrl = 'https://staging.skyrent.ca/';
+            $.common.init({
+                'baseUrl': 'https://staging.skyrent.ca/',
+                'admin': false,
+                'customLoaded': false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overlay').modal('show');
+            setTimeout(function () {
+                $('#overlay').modal('hide');
+            }, 20000);
+            $("#overlay .alert").animate({
+                opacity: 1.0
+            }, 20000).fadeOut("slow");
+        });
+    </script>
+    <style>
+        #overlay .alert {
+            border-radius: 30px 30px 30px 30px !important;
+        }
+    </style>
+
+    </html>

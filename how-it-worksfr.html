@@ -1,0 +1,564 @@
+    <!DOCTYPE html>
+
+    <html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <title>Comment ça marche</title>
+        <link href="assets/48cbc7e5/css/bootstrap.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/ui-layoutfr.css" rel="stylesheet">
+<link href="css/homeSearchfr.css" rel="stylesheet">
+<link href="css/ui-screen.css" rel="stylesheet">
+<link href="css/agreement-form.css" rel="stylesheet">
+<link href="css/listing-maps-acl.css" rel="stylesheet">
+<link href="css/custom-acl.css" rel="stylesheet">        <meta name="csrf-param" content="_srfrontendCSRF">
+<meta name="csrf-token" content="">
+                <script>
+            var os = navigator.platform;
+            document.cookie = "cuos=" + os;
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '485403209006216');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=485403209006216&amp;ev=PageView&amp;noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="../www.googletagmanager.com/gtag/js%EF%B9%96id=UA-167595448-1.js"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167595448-1');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Start Script ReachLocal -->
+        <script type="text/javascript" src="https://cdn.rlets.com/capture_configs/2aa/8ba/637/f0a4876bbb260a72c7ab7d7.js" async="async"></script>
+        <!-- End Script ReachLocal -->
+        <script src="../js.stripe.com/v3/index.js"></script>
+                    <!--Start of watson Script-->
+            <script>
+                window.watsonAssistantChatOptions = {
+                    integrationID: "0517d608-000c-43d2-a2af-0822acef6008", // The ID of this integration.
+                    region: "eu-fr", // The region your integration is hosted in.
+                    serviceInstanceID: "8dbc97ee-45e6-456a-9483-a9c186b53845", // The ID of your service instance.
+                    onLoad: function(instance) { instance.render(); }
+                };
+                setTimeout(function(){
+                    const t=document.createElement('script');
+                    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                    document.head.appendChild(t);
+                });
+            </script>
+            <!--End of watson-->
+            </head>
+
+    <body class="skyrent-body" data-spy="scroll" data-target=".how-it-works-tabs-btns" data-offset="162">
+        <div class="bb-alert" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+
+    <div class="" style="">
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top skyrent-navbar ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="indexfr.html"><img src="images/skyrent-logo.png" alt=""></a>            <div id="headerSticky" class="search-header">
+                <div class="input-list-search">
+                    <form id="property-filter-form2" action="property/listingfr.html" method="GET">                    <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"  autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal" aria-invalid="false">
+                    <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                    <button id="search-btn-top" type="submit" class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="nav-round-btn">
+                <a id="btn-popup-login" class="popuplink" href="indexfr.html">Se connecter</a>            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Activer/désactiver la navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+
+                    <a href="about-usfr.html">À propos de nous</a>                </li>
+                <li>
+                    <a href="how-it-worksfr.html" class="active">Comment ça marche</a>                </li>
+                <!--  <li>
+					<a href="https://www.skyrent.ca/support">Support</a>                </li> -->
+                <li>
+                    <a href="index?id=contctfr.html">Nous contacter</a>                </li>
+                
+
+                
+            </ul>
+        </div>
+</nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username" />
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd" />
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </header>
+
+        
+        <section class="How-it-works-page">
+  <div class="container mt-20">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="about-us-title">
+          Comment ça marche
+        </div>
+        <ul class="nav nav-tabs howit-tabs" role="tablist">
+          <li><a> Je suis </a></li>
+          <li role="presentation" class="active"><a href="#Renter" aria-controls="Renter" role="tab" data-toggle="tab">Locataire</a></li>
+          <li role="presentation"><a href="#Landlords" aria-controls="Landlords" role="tab" data-toggle="tab">Propriétaire</a></li>
+          <li role="presentation"><a href="#RentalAgent" aria-controls="RentalAgent" role="tab" data-toggle="tab">Agent de location</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="Renter">
+            <div class="steps-cover">
+              <div class="steps-heading"> trouvez votre prochaine location en six étapes faciles </div>
+              <ol class="steps-list">
+                <li>
+                  <span class="blueText">Parcourez les annonces,</span> <span class="blackText"> recherchez dans notre vaste base de données en utilisant une variété de critères tels que le montant du loyer, la superficie, le nombre de chambres, les propriétés fumeurs, l'accessibilité ou les propriétés acceptant les animaux domestiques.</span>
+                </li>
+                <li>
+                  <span class="blueText">Devenez un locataire enregistré,</span><span class="blackText"> en remplissant les conditions de présélection nécessaires.</span> 
+                </li>
+                <li>
+                  <span class="blueText">Fixez un rendez-vous pour visiter</span><span class="blackText"> votre propriété préférée.  (Remarque : Si vous ne soumettez pas d'offre dans les 48 heures suivant la visite d'une propriété, cette annonce sera supprimée de vos recherches pendant les 30 prochains jours. Cela permet de garantir que tous les rendez-vous de visite sont pris par des prospects sérieux.)</span>
+                </li>
+                <li>
+                  <span class="blueText">Créez et soumettez une offre</span><span class="blackText"> de location directement au propriétaire, qui vous répondra dans les 48 heures. Le propriétaire peut accepter votre offre telle quelle ou revenir avec une contre-offre que vous pouvez accepter ou contrer à nouveau. (Les propriétaires et les agents de location sur notre portail donneront la priorité à votre offre par rapport aux autres, car vous avez déjà terminé le processus de présélection et êtes un locataire recommandé.)</span> 
+                </li>
+                <li>
+                  <span class="blueText">Payez votre premier mois et dernier mois de loyer </span><span class="blackText"> sur notre portail sécurisé, à l'aide d'une carte de débit ou de crédit. (Les paiements de loyer ultérieurs peuvent être payés directement au propriétaire par virement électronique, chèque ou carte de crédit.)</span>
+                </li>
+                <!--<li>
+                  <span class="blueText">Consultez les offres de nos partenaires</span><span class="blackText"> et profitez de réductions sur les services internet et téléphoniques, les abonnements à la salle de sport ou l'assurance locataire.</span>
+                </li>-->
+              </ol>
+            </div>
+            <div class="howit-seperator"></div>
+            <div class="steps-cover mb-80">
+              <div class="steps-heading"> Avantages </div>
+              <ul class="page-content-abt-ul">
+                <li>
+                  <div class="blueTextList">Gratuit. </div>
+                  Il n'y a aucun frais pour parcourir les annonces, voir les propriétés en personne ou soumettre des offres de location.
+                </li>
+                <li>
+                  <div class="blueTextList">Fait gagner du temps</div>
+                  Vous n'avez besoin de terminer le processus de présélection qu'une seule fois. Les données sont enregistrées et peuvent être soumises avec n'importe quelle offre, ce qui vous évite de remplir plusieurs fois des formulaires papier.
+                </li>
+                <li>
+                  <div class="blueTextList">Pratique </div>
+                  Recherchez parmi des milliers d'annonces sur une seule plateforme, en modifiant les critères en fonction de vos besoins.
+                </li>
+                <li>
+                  <div class="blueTextList">Rapide </div>
+                  SkyRent répondra à toutes les questions dans les 24 heures – et les offres de location recevront une réponse du propriétaire dans les 48 heures.
+                </li>
+                <li>
+                  <div class="blueTextList">Options de paiement flexibles </div>
+                  Vous pouvez choisir de payer votre loyer par carte de débit ou de crédit, par virement électronique ou par chèque.
+                </li>
+                <li>
+                  <div class="blueTextList">Permet de cumuler des points </div>
+                  Payez votre premier et dernier mois de loyer via une carte de crédit à points (comme Airmiles™ ou Aeroplan™ par exemple) et cumulez des points.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="Landlords">
+            <div class="steps-cover">
+              <div class="steps-heading">  répertoriez votre propriété en six étapes faciles </div>
+              <ol class="steps-list">
+                <li>
+                  <div class="blueTextList">Créez un compte </div>
+                  <span class="blackText">Complétez notre processus d'inscription simple qui inclut vos coordonnées bancaires. Nous aurons besoin de ces informations pour vous transférer le loyer du premier et du dernier mois pour chaque offre de location que vous acceptez.</span> 
+                </li>
+                <li>
+                  <div class="blueTextList">Répertoriez votre propriété </div>
+                  <span class="blackText">Cliquez sur l'onglet « Créer une nouvelle annonce » et remplissez le formulaire en fournissant tous les détails sur votre bien locatif. Envisagez d'ajouter plusieurs photos et un lien vidéo, pour attirer autant d'attention que possible.</span>
+                </li>
+                <li>
+                  <div class="blueTextList">Définissez vos disponibilités </div>
+                  <span class="blackText">Sélectionnez les dates et heures auxquelles vous serez disponible pour faire visiter la propriété aux locataires enregistrés. (Nous autorisons uniquement les locataires qui ont terminé le processus de présélection à fixer des rendez-vous de visite.) Les locataires ont 48 heures après avoir visité votre propriété pour soumettre une offre.</span>
+                </li>
+                <li>
+                  <div class="blueTextList">Examinez les offres </div>
+                  <span class="blackText">Vous disposez de 48 heures pour accepter, contrer ou refuser toute offre de location.</span>  
+                </li>
+                <li>
+                  <div class="blueTextList">Acceptez une offre  </div>
+                  <span class="blackText">Sélectionnez l'offre que vous souhaitez accepter et informez-en le locataire.</span>  
+                </li>
+                <li>
+                  <div class="blueTextList">Recevez un acompte </div>
+                  <span class="blackText">Nous collectons le premier et le dernier mois de loyer auprès du locataire lors de l'acceptation d'une offre par le propriétaire. Nous transférerons ce montant – moins nos frais de service – sur votre compte bancaire dans un délai d'une semaine après réception de la confirmation que le locataire a reçu sa clé.</span>
+                </li>
+                  <li>
+                      <div class="blueTextList">Frais de service de SkyRent</div>
+                      <div><u>•  Pour les propriétaires individuels :</u></div>
+                      <span class="blackText">Nous facturons </span>
+                          <ul class="steps-list service-list" style="list-style: none;">
+                              <li>
+                                  <span class="blackText"> •  7.9% du loyer annuel payable mensuellement</span>
+                              </li>
+                          </ul>
+                      <div><u>•  Pour plusieurs propriétés, veuillez nous contacter.</u></div>
+                  </li>
+              </ol>
+            </div>
+            <div class="howit-seperator"></div>
+            <div class="steps-cover mb-80">
+              <div class="steps-heading"> Avantages </div>
+              <ul class="page-content-abt-ul">
+                <li>
+                  <div class="blueTextList">Fait gagner du temps</div>
+                  Il vous suffit de faire visiter votre bien à des locataires sérieux et qualifiés. Pas de gaspillage de temps !
+                </li>
+                <li>
+                  <div class="blueTextList">Efficace</div>
+                  Toutes les présélections nécessaires ont été effectuées pour vous, y compris une vérification du rapport de solvabilité du prospect.
+                </li>
+                <li>
+                  <div class="blueTextList">Pratique </div>
+                  Stockez le contrat et les qualifications de présélection du locataire dans notre espace sécurisé en ligne, ce qui facilite l'accès lorsque vous en avez besoin.
+                </li>
+                <li>
+                  <div class="blueTextList">Rentable</div>
+                  Faites la promotion d'un ou plusieurs logements locatifs sans frais. Vous ne payez que lorsque vous trouvez un locataire qualifié.
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="RentalAgent">
+            <div class="steps-cover">
+              <div class="steps-heading"> Agents et courtiers immobiliers – répertoriez vos propriétés en six étapes faciles. </div>
+              <ol class="steps-list">
+                <li>
+                  <div class="blueTextList">Créez un compte </div>
+                  <span class="blackText">Complétez notre processus d'inscription simple qui comprend les informations bancaires et identifiants d'agent. Nous aurons besoin de ces informations pour vous transférer le loyer du premier et du dernier mois pour chaque offre de location que vous acceptez.  </span> 
+                </li>
+                <li>
+                  <div class="blueTextList">Répertoriez votre propriété</div>
+                  <span class="blackText">Cliquez sur l'onglet « Créer une nouvelle annonce » et fournissez tous les détails sur votre bien locatif. Ajoutez autant de détails que possible, ainsi que des photos ou un lien vidéo, pour attirer l'attention.</span>
+                </li>
+                <li>
+                  <div class="blueTextList">Définissez vos disponibilités </div>
+                  <span class="blackText">Sélectionnez les dates et heures auxquelles vous serez disponible pour faire visiter la propriété aux locataires enregistrés. (Nous autorisons uniquement les locataires qui ont terminé le processus de présélection et fourni des détails sur leur historique de location, leurs références et leur dossier de crédit à fixer des rendez-vous de visite.) Les locataires ont 48 heures après avoir visité votre propriété pour soumettre une offre.</span>
+                </li>
+                <li>
+                  <div class="blueTextList">Examinez les offres</div>
+                  <span class="blackText">Vous disposez de 48 heures pour accepter, contrer ou refuser toute offre de location.</span>  
+                </li>
+                <li>
+                  <div class="blueTextList">Acceptez une offre</div>
+                  <span class="blackText">Sélectionnez l'offre que vous souhaitez accepter et informez-en le locataire.</span>  
+                </li>
+                <li>
+                  <div class="blueTextList">Recevez un acompte</div>
+                  <span class="blackText">Nous collectons le premier et le dernier mois de loyer auprès du locataire lors de l'acceptation d'une offre par le propriétaire. Nous transférerons ce montant – moins nos frais de service – sur votre compte bancaire dans un délai d'une semaine après réception de la confirmation que le locataire a reçu sa clé.</span>
+                </li>
+                  <li>
+                      <div class="blueTextList">Frais de service de SkyRent</div>
+                      <div><span class="blackText">Si un prospect prend rendez-vous depuis notre plateforme pour une visite et est ensuite signé par votre entreprise, nous prenons une commission de 4 %.</span></div>
+                      <br>
+                      <div><span class="blackText">Autrement, nous fournissons gratuitement des prospects illimités.</span></div>
+                  </li>
+              </ol>
+
+            </div>
+            <div class="howit-seperator"></div>
+            <div class="steps-cover mb-80">
+              <div class="steps-heading"> Avantages </div>
+              <ul class="page-content-abt-ul">
+                <li>
+                  <div class="blueTextList">Fait gagner du temps</div>
+                  Il vous suffit de faire visiter votre bien à des locataires sérieux et qualifiés. Pas de gaspillage de temps !
+                </li>
+                <li>
+                  <div class="blueTextList">Efficace</div>
+                  Toutes les présélections nécessaires ont été effectuées pour vous, y compris une vérification du rapport de solvabilité du prospect.
+                </li>
+                <li>
+                  <div class="blueTextList">Pratique </div>
+                  Stockez le contrat et les qualifications de présélection du locataire dans notre espace sécurisé en ligne, ce qui facilite l'accès lorsque vous en avez besoin.
+                </li>
+                <li>
+                  <div class="blueTextList">Rentable</div>
+                  Faites la promotion d'un ou de plusieurs logements locatifs sans frais. Vous ne payez que lorsque vous trouvez un locataire qualifié.
+                </li>
+                <li>
+                  <div class="blueTextList">Recevez l'intégralité de vos frais de référencement.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    </div>
+    <footer class="footer-main">
+    <div class="footer-inner">
+        <div class="container-fluid">
+            <div class="footer-left">
+                <div class="brand">
+                     SkyRent
+                 </div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="indexfr.html">Accueil</a>                    </li>
+                    <li>
+                        <a href="about-usfr.html">À propos de nous</a>                    </li>
+                    <li>
+                        <a href="how-it-worksfr.html">Comment ça marche</a>                    </li>
+                    <li>
+                        <a href="index?id=contctfr.html">Nous contacter</a>                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="images/skyrent-logo.png" alt="">                </div>
+                <div class="copyright">
+                     Copyright ©2021 SkyRent Inc Tous droits réservés.
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="privacy-policy">
+                    <a href="privacy-policyfr.html">Politique de confidentialité</a>                    <span></span>
+                    <a href="terms-of-usefr.html">Conditions d'utilisation</a>                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <div class="modal sr-modal fade" id="ajaxModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal sr-modal fade" id="ajaxModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+        <script src="assets/dd593c97/jquery.js"></script>
+<script src="assets/1366a38b/yii.js"></script>
+<script src="assets/48cbc7e5/js/bootstrap.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.carousel2.thumbs.min.js"></script>
+<script src="js/mdb.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/bootbox/bootbox.min.js"></script>
+<script src="js/form-serialize-object.js"></script>
+<script src="js/sr_customfr.js"></script>
+<script src="js/html5-form-validation-polyfill.js"></script>
+<script src="js/agreement-form.js"></script>
+<script src="js/custom-aclfr.js"></script>
+<script src="js/checkout.js"></script>
+<script src="assets/1366a38b/yii.activeForm.js"></script>
+<script>jQuery(function ($) {
+    $(document).ready(function (e) {
+		$(document).on('click', '.video-play-button', function (e) {
+			var video = $(this).parent().find('.video-tag').get(0);
+			if (video.paused === false) {
+				video.pause();
+			} else {
+				video.play();
+			}
+			return false;
+		});
+   });
+	
+	
+jQuery('#property-filter-form2').yiiActiveForm([], []);
+});</script>        </body>
+
+    <script>
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                //message: '<h1><i class="fa fa-spinner fa-spin"></i></h1>',
+                message: `<div class="loaderImage"><img src="/images/loader.gif " alt=""></div>`,
+                css: {
+                    border: 'none',
+                    padding: '10px',
+                    backgroundColor: '#fff',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    background: 'none',
+                    opacity: 1,
+                    color: '#fff'
+                }
+            });
+        });
+
+        $(document).ajaxStop($.unblockUI);
+
+        $(document).ready(function () {
+            /* To clear pop up data after pop up close */
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#ajaxModel").html('');
+            });
+
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+        /* end */
+        $(document).ready(function () {
+            $.common.PathUrl = 'https://staging.skyrent.ca/';
+            $.common.init({
+                'baseUrl': 'https://staging.skyrent.ca/',
+                'admin': false,
+                'customLoaded': false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overlay').modal('show');
+            setTimeout(function () {
+                $('#overlay').modal('hide');
+            }, 20000);
+            $("#overlay .alert").animate({
+                opacity: 1.0
+            }, 20000).fadeOut("slow");
+        });
+    </script>
+    <style>#overlay .alert {
+            border-radius: 30px 30px 30px 30px !important;
+        }
+    </style>
+
+    </html>

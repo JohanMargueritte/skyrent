@@ -1,0 +1,601 @@
+    <!DOCTYPE html>
+
+    <html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="../images/favicon.ico">
+        <title>Ajouter une propriété</title>
+        <link href="../assets/48cbc7e5/css/bootstrap.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/owl.carousel.min.css" rel="stylesheet">
+<link href="../css/ui-layoutfr.css" rel="stylesheet">
+<link href="../css/homeSearchfr.css" rel="stylesheet">
+<link href="../css/ui-screen.css" rel="stylesheet">
+<link href="../css/agreement-form.css" rel="stylesheet">
+<link href="../css/listing-maps-acl.css" rel="stylesheet">
+<link href="../css/custom-acl.css" rel="stylesheet">        <meta name="csrf-param" content="_srfrontendCSRF">
+<meta name="csrf-token" content="">
+                <script>
+            var os = navigator.platform;
+            document.cookie = "cuos=" + os;
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '485403209006216');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=485403209006216&ev=PageView&noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167595448-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167595448-1');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Start Script ReachLocal -->
+        <script type="text/javascript" src="https://cdn.rlets.com/capture_configs/2aa/8ba/637/f0a4876bbb260a72c7ab7d7.js" async="async"></script>
+        <!-- End Script ReachLocal -->
+        <script src="https://js.stripe.com/v3/"></script>
+                    <!--Start of watson Script-->
+            <script>
+                window.watsonAssistantChatOptions = {
+                    integrationID: "0517d608-000c-43d2-a2af-0822acef6008", // The ID of this integration.
+                    region: "eu-fr", // The region your integration is hosted in.
+                    serviceInstanceID: "8dbc97ee-45e6-456a-9483-a9c186b53845", // The ID of your service instance.
+                    onLoad: function(instance) { instance.render(); }
+                };
+                setTimeout(function(){
+                    const t=document.createElement('script');
+                    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                    document.head.appendChild(t);
+                });
+            </script>
+            <!--End of watson-->
+            </head>
+
+    <body class="" data-spy="scroll" data-target=".how-it-works-tabs-btns" data-offset="162">
+        <div class="bb-alert" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+
+    <div class="h-100" style="height:100%;">
+        <header class="main-header">
+                    </header>
+
+        
+        
+<header></header>
+    <div class="container-fluid landlord-workflow-container">
+        <div class="col-sm-6 left-panel col-12" id="left-panel">
+            <div class="">
+                <button type="button" class="navbar-toggle collapsed fixed-top" data-toggle="collapse"
+                        data-target="#navbar-landlord"
+                        aria-expanded="false" aria-controls="navbar"><span class="sr-only">Afficher/masquer la navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="left-panel-logo">
+                    <a class="navbar-brand" href="../indexfr.html"><img src="../images/skyrent-logo-home.png" alt=""></a>
+                </div>
+            </div>
+            <div class="left-panel-title">
+                <div class=" justify-content-center px-10">
+                    <h1>Détails sur les commodités.</h1>
+                </div>
+            </div>
+            <div class="col-sm-6 landlord-small-device-nav">
+                <div class="flex-row">
+    <div class="navbar-header">
+        <div id="headerSticky" class="search-header">
+            <div class="input-list-search">
+                <form id="property-filter-form2" action="listingfr.html" method="GET">                <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"
+                       autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal"
+                       aria-invalid="false">
+                <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                <button id="search-btn-top" type="submit"
+                        class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                    <i class="fa fa-search"></i>
+                </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="navbar-landlord" class="navbar-collapse collapse medium-size-device">
+        <div class="d-flex flex-row landlord-navbar">
+            <div class="header-new">
+                <a href="../about-usfr.html">À propos de nous</a>            </div><!-- Abous Us -->
+            <div class="header-new">
+                <a href="../how-it-worksfr.html">Comment ça marche</a>            </div><!-- How It Works -->
+            <div class="header-new">
+                <a href="../supportfr.html">Support</a>            </div><!-- Support -->
+            <div class="header-new">
+                <a href="../contact-usfr.html">Nous contacter</a>            </div><!-- Contact Us -->
+
+                                <div class="header-new">
+                        <a href="../property/add-propertyfr.html">Ajouter une propriété</a>                    </div>
+                    
+
+                            <div class="header-new dropdown">
+                                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown"
+                       role="button" aria-haspopup="true" aria-expanded="false">
+                        Landlord <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="" href="../profilefr.html" tabindex="-1">Mon profil</a>                        </li>
+                        <li>
+                            <a class="" href="../paymentsfr.html" tabindex="-1">Paiements</a>                        </li>
+                        <li class="dropdown-submenu">
+                            <a class="multi-level-dropdown " tabindex="-1"
+                               href="#">
+                                Propriétés <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                                                            <ul class="dropdown-menu" >
+                                    <li>
+                                        <a class="" href="pending-offersfr.html" tabindex="-1">Offres en attente</a>                                    </li>
+                                    <li>
+                                        <a class="" href="listed-propertiesfr.html" tabindex="-1">Propriétés répertoriées</a>                                    </li>
+                                    <li>
+                                        <a class="" href="schedule-visitsfr.html" tabindex="-1">Visites programmées</a>                                    </li>
+                                </ul>
+                                
+                        </li>
+                    </ul>
+                </div>
+                
+            <div class="nav-round-btn-new">
+                <a href="../logout">Se déconnecter</a>            </div>
+        </div>
+    </div>
+
+    <div class="progress" style="height: 5px; margin-left: -15px ">
+        <div class="progress-bar" role="progressbar"
+             style="width: 62%; background:#00b7ef"
+             aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+</div>
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username" />
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd" />
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="col-sm-6 landlord-large-device-nav">
+            <div class="flex-row">
+    <div class="navbar-header">
+        <div id="headerSticky" class="search-header">
+            <div class="input-list-search">
+                <form id="property-filter-form2" action="listingfr.html" method="GET">                <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"
+                       autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal"
+                       aria-invalid="false">
+                <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                <button id="search-btn-top" type="submit"
+                        class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                    <i class="fa fa-search"></i>
+                </button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="navbar-landlord" class="navbar-collapse collapse medium-size-device">
+        <div class="d-flex flex-row landlord-navbar">
+            <div class="header-new">
+                <a href="../about-usfr.html">À propos de nous</a>            </div><!-- Abous Us -->
+            <div class="header-new">
+                <a href="../how-it-worksfr.html">Comment ça marche</a>            </div><!-- How It Works -->
+            <div class="header-new">
+                <a href="../supportfr.html">Support</a>            </div><!-- Support -->
+            <div class="header-new">
+                <a href="../contact-usfr.html">Nous contacter</a>            </div><!-- Contact Us -->
+
+                                <div class="header-new">
+                        <a href="add-propertyfr.html">Ajouter une propriété</a>                    </div>
+                    
+
+                            <div class="header-new dropdown">
+                                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown"
+                       role="button" aria-haspopup="true" aria-expanded="false">
+                        Landlord <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="" href="../profilefr.html" tabindex="-1">Mon profil</a>                            </li>
+                            <li>
+                                <a class="" href="../paymentsfr.html" tabindex="-1">Paiements</a>                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="multi-level-dropdown active" tabindex="-1" href="#">
+                                    Propriétés <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                                                    <ul class="dropdown-menu" style=display:block>
+                                        <li>
+                                            <a class="" href="pending-offersfr.html" tabindex="-1">Offres en attente</a>                                        </li>
+                                        <li>
+                                            <a class="" href="listed-propertiesfr.html" tabindex="-1">Propriétés répertoriées</a>                                        </li>
+                                        <li>
+                                            <a class="active" href="schedule-visitsfr.html" tabindex="-1">Visites programmées</a>                                    </li>
+                                </ul>
+                                
+                        </li>
+                    </ul>
+                </div>
+                
+            <div class="nav-round-btn-new">
+                <a href="../logout">Se déconnecter</a>            </div>
+        </div>
+    </div>
+
+    <div class="progress" style="height: 5px; margin-left: -15px ">
+        <div class="progress-bar" role="progressbar"
+             style="width: 62%; background:#00b7ef"
+             aria-valuenow="62" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+</div>
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username"/>
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd"/>
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"><a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-6">
+
+            <section class="sr-form mt-100">
+                <div class="container landlord-container" id="container">
+                    <div class="sr-page-content" >
+                        <form id="w0" action="add-property-amenitiesfr.html" method="post" data-pjax>
+<input type="hidden" name="_srfrontendCSRF" value="rJd9_Iuq04VQIT-AZ4KVLKRXPQ4ST5C9tys06Bad_f7Gpharzc7ithVEd-Mu0N5-7QdlVH8f0vHSaXmbfNLLiQ=="><input type="hidden" name="property_screen" value="3">                        <div>
+
+<!--                            -->
+                            <div class="form-group field-property-amenities_list">
+<div class="sr-form-check row"><input type="hidden" name="Property[amenities_list]" value=""><div id="property-amenities_list"><div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-40"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="40"><span class="landlord-span-logo  airconditioning-logo"></span><input class="svg airconditioning-svg form-control" id="airconditioning" type="checkbox" name="Property[amenities_list][]" value="40"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Climatisation</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-11"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="11"><span class="landlord-span-logo  bbqs-logo"></span><input class="svg bbqs-svg form-control" id="bbqs" type="checkbox" name="Property[amenities_list][]" value="11"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Barbecues</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-35"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="35"><span class="landlord-span-logo  carwash-logo"></span><input class="svg carwash-svg form-control" id="carwash" type="checkbox" name="Property[amenities_list][]" value="35"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Lave-auto</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-8"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="8"><span class="landlord-span-logo  commonrooftopdeck-logo"></span><input class="svg commonrooftopdeck-svg form-control" id="commonrooftopdeck" type="checkbox" name="Property[amenities_list][]" value="8"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Terrasse sur le toit</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-9"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="9"><span class="landlord-span-logo  concierge-logo"></span><input class="svg concierge-svg form-control" id="concierge" type="checkbox" name="Property[amenities_list][]" value="9"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Concierge</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-12"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="12"><span class="landlord-span-logo  guestsuites-logo"></span><input class="svg guestsuites-svg form-control" id="guestsuites" type="checkbox" name="Property[amenities_list][]" value="12"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Chambres d'hôtes</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-7"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="7"><span class="landlord-span-logo  gymexerciseroom-logo"></span><input class="svg gymexerciseroom-svg form-control" id="gymexerciseroom" type="checkbox" name="Property[amenities_list][]" value="7"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Salle de gym / d'exercice</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-21"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="21"><span class="landlord-span-logo  laundry-insuite-logo"></span><input class="svg laundry-insuite-svg form-control" id="laundry-insuite" type="checkbox" name="Property[amenities_list][]" value="21"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Lave-linge</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-22"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="22"><span class="landlord-span-logo  laundryfacility-logo"></span><input class="svg laundryfacility-svg form-control" id="laundryfacility" type="checkbox" name="Property[amenities_list][]" value="22"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Buanderie</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-17"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="17"><span class="landlord-span-logo  meetingfunctionroom-logo"></span><input class="svg meetingfunctionroom-svg form-control" id="meetingfunctionroom" type="checkbox" name="Property[amenities_list][]" value="17"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Salle de réunion / de réception</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-14"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="14"><span class="landlord-span-logo  parkinggarage-logo"></span><input class="svg parkinggarage-svg form-control" id="parkinggarage" type="checkbox" name="Property[amenities_list][]" value="14"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Garage</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-10"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="10"><span class="landlord-span-logo  partyroom-logo"></span><input class="svg partyroom-svg form-control" id="partyroom" type="checkbox" name="Property[amenities_list][]" value="10"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Salle de fête</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-15"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="15"><span class="landlord-span-logo  sauna-logo"></span><input class="svg sauna-svg form-control" id="sauna" type="checkbox" name="Property[amenities_list][]" value="15"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Sauna</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-16"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="16"><span class="landlord-span-logo  securityguard-logo"></span><input class="svg securityguard-svg form-control" id="securityguard" type="checkbox" name="Property[amenities_list][]" value="16"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Garde de sécurité</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-37"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="37"><span class="landlord-span-logo  sharedlaundry-logo"></span><input class="svg sharedlaundry-svg form-control" id="sharedlaundry" type="checkbox" name="Property[amenities_list][]" value="37"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Buanderie commune</span></label></div></div>
+<div class="col-xs-6 col-sm-6 col-md-6 mb-20 amenities-button " id="button-18"><div class="custom-radio custom-radio-landlord-amenities"><label class="label-class" id="18"><span class="landlord-span-logo  storage-locker-logo"></span><input class="svg storage-locker-svg form-control" id="storage-locker" type="checkbox" name="Property[amenities_list][]" value="18"  style="display:none;"><span class="landlord-span-label landlord-span-label-amenities">Rangement - Casier</span></label></div></div></div></div><p class="help-block help-block-error"></p>
+</div>
+                        </div>
+                    </div>
+                    <div class="row col-xs-12 mb-100">
+                        <div class="col-sm-6 mt-15 col-xs-6">
+                            <div class="form-group">
+
+                            <div class="outline-btn-rounded outline-btn-rounded-back">
+                                <a class="" href="add-property-utilitiesfr.html">                                <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+                                Retour
+                                </a>                            </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xs-6">
+                            <div class="form-group">
+                                <button type="submit" id="text_form_submit" class="valid outline-btn-rounded">Continuer <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>                            </div>
+                            <script type="text/javascript">
+                                                            </script>
+                        </div>
+                    </div>
+                    </form>                </div>
+            </section>
+
+    </div>
+    </div>
+        <div class="modal sr-modal fade" id="ajaxModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal sr-modal fade" id="ajaxModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+        <script src="../assets/dd593c97/jquery.js"></script>
+<script src="../assets/1366a38b/yii.js"></script>
+<script src="../assets/1366a38b/yii.activeForm.js"></script>
+<script src="../assets/48cbc7e5/js/bootstrap.js"></script>
+<script src="../js/jquery.fancybox.pack.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/owl.carousel2.thumbs.min.js"></script>
+<script src="../js/mdb.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap-datepicker.min.js"></script>
+<script src="../js/jquery.blockUI.js"></script>
+<script src="../js/bootbox/bootbox.min.js"></script>
+<script src="../js/form-serialize-object.js"></script>
+<script src="../js/sr_customfr.js"></script>
+<script src="../js/html5-form-validation-polyfill.js"></script>
+<script src="../js/agreement-form.js"></script>
+<script src="../js/custom-aclfr.js"></script>
+<script src="../js/checkout.js"></script>
+<script>jQuery(function ($) {
+jQuery('#property-filter-form2').yiiActiveForm([], []);
+jQuery('#w0').yiiActiveForm([], []);
+
+var allLabels = document.getElementsByClassName("label-class");
+        for (var i = 0; i < allLabels.length; i++){
+           var labelId = allLabels.item(i).id;
+           var button = document.getElementById("button-"+labelId);
+           allLabels.item(i).style.width = button.clientWidth - 50 + 'px';
+        };
+        
+    $(document).on("change", "input[type='checkbox']", function () {
+        var elem = document.getElementById("button-"+this.value);
+        elem.classList.contains("checked") ? elem.classList.remove("checked") : elem.classList.add("checked");
+    });
+    
+});</script>        </body>
+
+    <script>
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                //message: '<h1><i class="fa fa-spinner fa-spin"></i></h1>',
+                message: `<div class="loaderImage"><img src="../images/loader.gif " alt=""></div>`,
+                css: {
+                    border: 'none',
+                    padding: '10px',
+                    backgroundColor: '#fff',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    background: 'none',
+                    opacity: 1,
+                    color: '#fff'
+                }
+            });
+        });
+
+        $(document).ajaxStop($.unblockUI);
+
+        $(document).ready(function () {
+            /* To clear pop up data after pop up close */
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#ajaxModel").html('');
+            });
+
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+        /* end */
+        $(document).ready(function () {
+            $.common.PathUrl = 'https://staging.skyrent.ca/';
+            $.common.init({
+                'baseUrl': 'https://staging.skyrent.ca/',
+                'admin': false,
+                'customLoaded': false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overlay').modal('show');
+            setTimeout(function () {
+                $('#overlay').modal('hide');
+            }, 20000);
+            $("#overlay .alert").animate({
+                opacity: 1.0
+            }, 20000).fadeOut("slow");
+        });
+    </script>
+    <style>
+        #overlay .alert {
+            border-radius: 30px 30px 30px 30px !important;
+        }
+    </style>
+
+    </html>

@@ -1,0 +1,565 @@
+    <!DOCTYPE html>
+
+    <html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <title>Profil</title>
+        <link href="assets/48cbc7e5/css/bootstrap.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/ui-layoutfr.css" rel="stylesheet">
+<link href="css/homeSearchfr.css" rel="stylesheet">
+<link href="css/ui-screen.css" rel="stylesheet">
+<link href="css/agreement-form.css" rel="stylesheet">
+<link href="css/listing-maps-acl.css" rel="stylesheet">
+<link href="css/custom-acl.css" rel="stylesheet">        <meta name="csrf-param" content="_srfrontendCSRF">
+<meta name="csrf-token" content="">
+                <script>
+            var os = navigator.platform;
+            document.cookie = "cuos=" + os;
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '485403209006216');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=485403209006216&ev=PageView&noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167595448-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167595448-1');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Start Script ReachLocal -->
+        <script type="text/javascript" src="https://cdn.rlets.com/capture_configs/2aa/8ba/637/f0a4876bbb260a72c7ab7d7.js" async="async"></script>
+        <!-- End Script ReachLocal -->
+        <script src="https://js.stripe.com/v3/"></script>
+                    <!--Start of watson Script-->
+            <script>
+                window.watsonAssistantChatOptions = {
+                    integrationID: "0517d608-000c-43d2-a2af-0822acef6008", // The ID of this integration.
+                    region: "eu-fr", // The region your integration is hosted in.
+                    serviceInstanceID: "8dbc97ee-45e6-456a-9483-a9c186b53845", // The ID of your service instance.
+                    onLoad: function(instance) { instance.render(); }
+                };
+                setTimeout(function(){
+                    const t=document.createElement('script');
+                    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                    document.head.appendChild(t);
+                });
+            </script>
+            <!--End of watson-->
+            </head>
+
+    <body class="skyrent-body" data-spy="scroll" data-target=".how-it-works-tabs-btns" data-offset="162">
+        <div class="bb-alert" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+
+    <div class="" style="">
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top skyrent-navbar ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="indexfr.html"><img src="images/skyrent-logo.png" alt=""></a>            <div id="headerSticky" class="search-header">
+                <div class="input-list-search">
+                    <form id="property-filter-form2" action="property/listingfr.html" method="GET">                    <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"  autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal" aria-invalid="false">
+                    <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                    <button id="search-btn-top" type="submit" class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="nav-round-btn">
+                <a href="logout">Se déconnecter</a>            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Afficher/masquer la navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+
+                    <a href="about-usfr.html">À propos de nous</a>                </li>
+                <li>
+                    <a href="how-it-worksfr.html">Comment ça marche</a>                </li>
+                <!--  <li>
+					<a href="supportfr.html">Support</a>                </li> -->
+                <li>
+                    <a href="contact-usfr.html">Nous contacter</a>                </li>
+                                        <li>
+                            <a href="renter/rent-propertyfr.html">Nouvelle recherche</a>
+                        </li>
+                        <li>
+                            <a href="renter/favourite-propertiesfr.html">Favoris</a>
+                        </li>
+                        
+
+                                    <li class="dropdown sr-nav-dropdown">
+                                                <a href="#" class="active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            John <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="" href="profilefr.html" tabindex="-1">Mon profil</a>                            </li>
+                            <li>
+                                <a class="" href="paymentsfr.html" tabindex="-1">Paiements</a>                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="multi-level-dropdown active" tabindex="-1" href="#">
+                                    Propriétés <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                                                    <ul class="dropdown-menu" style=display:block>
+                                        <li>
+                                            <a class="" href="renter/pending-proposalfr.html" tabindex="-1">Propositions</a>                                        </li>
+                                        <li>
+                                            <a class="active" href="renter/visited-propertiesfr.html" tabindex="-1">Propriétés visitées</a>                                        </li>
+                                        <li>
+                                            <a class="" href="renter/favourite-propertiesfr.html" tabindex="-1">Propriétés favorites</a>                                        </li>
+                                    </ul>
+                                    
+                            </li>
+                        </ul>
+                    </li>
+                    
+            </ul>
+        </div>
+</nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username" />
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd" />
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </header>
+
+        
+        <section class="sr-page-main profile-page">
+    <div class="container">
+        <div class="page-heading">
+            <h1 class="page-title heading-border">Modifier le profil</h1>
+        </div>
+        <div class="sr-page-content">
+            <form id="w0" class="" action="site/profile" method="post" enctype="multipart/form-data">
+<input type="hidden" name="_srfrontendCSRF" value="qa11P0Rgzjb5ZyoPQesso8JkP4YgZ37gi6fnF_h-TnbPyUJdPjOcAaMyRF0onXnimFNU92IQU6Lc0o0guhg_Ig==">
+<input type="hidden" id="user-street_number" class="form-control" name="User[street_number]" value="80" data-geo="street_number">
+
+<input type="hidden" id="user-route" class="form-control" name="User[route]" value="John Street" data-geo="route">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <div class="profile-photo-main">
+                        <div class="profile-image-main">
+                            <img class="profile-image" src="uploads/users/user-3891-1595012849.jpg" alt="">                            
+<label for="user-profile_image_tmp" class="profile-photo-edit"><input type="hidden" name="User[profile_image_tmp]" value=""><input type="file" id="user-profile_image_tmp" class="" name="User[profile_image_tmp]" accept="image/x-png, image/jpg, image/jpeg"><i class="fa fa-camera" aria-hidden="true"></i></label>
+              
+                        </div>
+                                                <div class="file-name-show"></div>
+                        <div class="block text-center eprofile-main">
+                            <div class="eprofile-name">John Renter</div>
+                            <div class="eprofile-email"><a href="mailto:johnrenter@test.com">johnrenter@test.com</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4 class="form-heading">Modifier le profil</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="active" for="user-first_name">Prénom</label><input type="text" id="user-first_name" class="form-control" name="User[first_name]" value="John" autocomplete="off" aria-required="true"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="active" for="user-last_name">Nom de famille</label><input type="text" id="user-last_name" class="form-control" name="User[last_name]" value="Renter" autocomplete="off" aria-required="true"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="active" for="user-email">E-mail</label><input type="text" id="user-email" class="form-control" name="User[email]" value="johnrenter@test.com" disabled="disabled" autocomplete="off" aria-required="true"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="active" for="user-mobile_number">Téléphone</label><input type="text" id="user-mobile_number" class="form-control" name="User[mobile_number]" value="4163774775" autocomplete="off"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group input-field">
+                        
+<label class="active" for="user-address">Adresse</label><input type="text" id="user-address" class="form-control" name="User[address]" value="80 John Street, Toronto, ON, Canada" placeholder=""><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="active-default" for="user-city_name">Ville</label><input type="text" id="user-city_name" class="form-control" name="User[city_name]" value="Toronto" readonly="readonly" autocomplete="off" data-geo="locality" aria-required="true"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="active-default" for="user-province_name">Province</label><input type="text" id="user-province_name" class="form-control" name="User[province_name]" value="Ontario" readonly="readonly" autocomplete="off" data-geo="administrative_area_level_1" aria-required="true"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="active-default" for="user-postal_code">Code postal</label><input type="text" id="user-postal_code" class="form-control" name="User[postal_code]" value="l4j5w4" autocomplete="off" data-geo="postal_code" aria-required="true"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Option to subscribe / unsubscribe from promo emails -->
+            <div class="row">
+                <div class="col-xs-12">
+                    
+<div class="checkbox">
+<label for="user-unsubscribed">
+<input type="hidden" name="User[unsubscribed]" value="0"><input type="checkbox" id="user-unsubscribed" class="inline-input" name="User[unsubscribed]" value="1" checked>
+Se désabonner des e-mails promotionnels
+</label>
+<p class="help-block help-block-error"></p>
+
+</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12"><h4 class="form-heading">Modifier le mot de passe</h4></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+
+                            <label class="" for="user-current_password">Mot de passe actuel</label><input type="password" id="user-current_password" class="form-control" name="User[current_password]"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="" for="user-new_password">Nouveau mot de passe</label><input type="password" id="user-new_password" class="form-control" name="User[new_password]"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group input-field">
+                        
+<label class="" for="user-confirm_new_password">Confirmez le nouveau mot de passe</label><input type="password" id="user-confirm_new_password" class="form-control" name="User[confirm_new_password]"><p class="help-block help-block-error"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <div class="form-group">
+                        <button type="submit" class="outline-btn-rounded mt-60">Mettre à jour</button>                    </div>
+                </div>
+            </div>
+            </form>        </div>
+    </div>
+</section>
+    </div>
+    <footer class="footer-main">
+    <div class="footer-inner">
+        <div class="container-fluid">
+            <div class="footer-left">
+                <div class="brand">
+                     SkyRent
+                 </div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="indexfr.html">Accueil</a>                    </li>
+                    <li>
+                        <a href="about-usfr.html">À propos de nous</a>                    </li>
+                    <li>
+                        <a href="how-it-worksfr.html">Comment ça marche</a>                    </li>
+                    <li>
+                        <a href="index?id=contctfr.html">Nous contacter</a>                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="images/skyrent-logo.png" alt="">                </div>
+                <div class="copyright">
+                     Copyright ©2021 SkyRent Inc Tous droits réservés.
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="privacy-policy">
+                    <a href="privacy-policyfr.html">Politique de confidentialité</a>                    <span></span>
+                    <a href="terms-of-usefr.html">Conditions d'utilisation</a>                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <div class="modal sr-modal fade" id="ajaxModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal sr-modal fade" id="ajaxModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyBeoRc8BuP4FOqz2zL3pu75-pJKyxVlcdw&amp;libraries=places"></script>
+<script src="assets/dd593c97/jquery.js"></script>
+<script src="assets/1366a38b/yii.js"></script>
+<script src="assets/1366a38b/yii.activeForm.js"></script>
+<script src="js/jquery.geocomplete.js"></script>
+<script src="assets/48cbc7e5/js/bootstrap.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.carousel2.thumbs.min.js"></script>
+<script src="js/mdb.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/bootbox/bootbox.min.js"></script>
+<script src="js/form-serialize-object.js"></script>
+<script src="js/sr_customfr.js"></script>
+<script src="js/html5-form-validation-polyfill.js"></script>
+<script src="js/agreement-form.js"></script>
+<script src="js/custom-aclfr.js"></script>
+<script src="js/checkout.js"></script>
+<script>jQuery(function ($) {
+jQuery('#w0').yiiActiveForm([], []);
+    $(document).ready(function(e) {
+        $('#user-profile_image_tmp').change(function(e) {
+            var src=$(this).val();
+            readURL(this);
+            var fileName = e.target.files[0].name;
+            $('.file-name-show').html(fileName);
+        });
+        $("#user-address").focus(function() {
+            $("#user-address").attr('autocomplete', 'nope');
+        });
+        $("#user-address").keypress(function() {
+            $("#user-address").attr('autocomplete', 'nope');
+        });
+    });
+
+	 function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+			console.log(reader);
+            reader.onload = function (e) {
+                $('.profile-image').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+
+	$("#user-address").geocomplete({
+		details: "form",
+		detailsAttribute:"data-geo",
+		types: ["geocode", "establishment"],
+		componentRestrictions: {country: "CA"},
+		markerOptions: {
+			draggable: true
+		}
+	}).bind("geocode:result", function (event, result) {
+		console.log(event);
+		console.log(result);
+
+	});
+
+
+jQuery('#property-filter-form2').yiiActiveForm([], []);
+});</script>        </body>
+
+    <script>
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                //message: '<h1><i class="fa fa-spinner fa-spin"></i></h1>',
+                message: `<div class="loaderImage"><img src="images/loader.gif " alt=""></div>`,
+                css: {
+                    border: 'none',
+                    padding: '10px',
+                    backgroundColor: '#fff',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    background: 'none',
+                    opacity: 1,
+                    color: '#fff'
+                }
+            });
+        });
+
+        $(document).ajaxStop($.unblockUI);
+
+        $(document).ready(function () {
+            /* To clear pop up data after pop up close */
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#ajaxModel").html('');
+            });
+
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+        /* end */
+        $(document).ready(function () {
+            $.common.PathUrl = 'https://staging.skyrent.ca/';
+            $.common.init({
+                'baseUrl': 'https://staging.skyrent.ca/',
+                'admin': false,
+                'customLoaded': false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overlay').modal('show');
+            setTimeout(function () {
+                $('#overlay').modal('hide');
+            }, 20000);
+            $("#overlay .alert").animate({
+                opacity: 1.0
+            }, 20000).fadeOut("slow");
+        });
+    </script>
+    <style>
+        #overlay .alert {
+            border-radius: 30px 30px 30px 30px !important;
+        }
+    </style>
+
+    </html>

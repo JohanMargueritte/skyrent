@@ -1,0 +1,559 @@
+    <!DOCTYPE html>
+
+    <html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="../images/favicon.ico">
+        <title>Visites programmées</title>
+        <link href="../assets/48cbc7e5/css/bootstrap.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<link href="../css/normalize.css" rel="stylesheet">
+<link href="../css/owl.carousel.min.css" rel="stylesheet">
+<link href="../css/ui-layoutfr.css" rel="stylesheet">
+<link href="../css/homeSearchfr.css" rel="stylesheet">
+<link href="../css/ui-screen.css" rel="stylesheet">
+<link href="../css/agreement-form.css" rel="stylesheet">
+<link href="../css/listing-maps-acl.css" rel="stylesheet">
+<link href="../css/custom-acl.css" rel="stylesheet">        <meta name="csrf-param" content="_srfrontendCSRF">
+<meta name="csrf-token" content="">
+                <script>
+            var os = navigator.platform;
+            document.cookie = "cuos=" + os;
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '485403209006216');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=485403209006216&ev=PageView&noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167595448-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167595448-1');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Start Script ReachLocal -->
+        <script type="text/javascript" src="https://cdn.rlets.com/capture_configs/2aa/8ba/637/f0a4876bbb260a72c7ab7d7.js" async="async"></script>
+        <!-- End Script ReachLocal -->
+        <script src="https://js.stripe.com/v3/"></script>
+                    <!--Start of watson Script-->
+            <script>
+                window.watsonAssistantChatOptions = {
+                    integrationID: "0517d608-000c-43d2-a2af-0822acef6008", // The ID of this integration.
+                    region: "eu-fr", // The region your integration is hosted in.
+                    serviceInstanceID: "8dbc97ee-45e6-456a-9483-a9c186b53845", // The ID of your service instance.
+                    onLoad: function(instance) { instance.render(); }
+                };
+                setTimeout(function(){
+                    const t=document.createElement('script');
+                    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                    document.head.appendChild(t);
+                });
+            </script>
+            <!--End of watson-->
+            </head>
+
+    <body class="skyrent-body" data-spy="scroll" data-target=".how-it-works-tabs-btns" data-offset="162">
+        <div class="bb-alert" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+
+    <div class="" style="">
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top skyrent-navbar ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="../indexfr.html"><img src="../images/skyrent-logo.png" alt=""></a>            <div id="headerSticky" class="search-header">
+                <div class="input-list-search">
+                    <form id="property-filter-form2" action="listingfr.html" method="GET">                    <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"  autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal" aria-invalid="false">
+                    <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                    <button id="search-btn-top" type="submit" class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="nav-round-btn">
+                <a href="../logout">Se déconnecter</a>            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Afficher/masquer la navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+
+                    <a href="../about-usfr.html">À propos de nous</a>                </li>
+                <li>
+                    <a href="../how-it-worksfr.html">Comment ça marche</a>                </li>
+                <!--  <li>
+					<a href="../supportfr.html">Support</a>                </li> -->
+                <li>
+                    <a href="../contact-usfr.html">Nous contacter</a>                </li>
+                                        <li>
+                            <a href="add-propertyfr.html">Ajouter une propriété</a>                        </li>
+                        
+
+                                    <li class="dropdown sr-nav-dropdown">
+                                                <a href="#" class="active dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            Landlord <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="" href="../profilefr.html" tabindex="-1">Mon profil</a>                            </li>
+                            <li>
+                                <a class="" href="../paymentsfr.html" tabindex="-1">Paiements</a>                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="multi-level-dropdown active" tabindex="-1" href="#">
+                                    Propriétés <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                </a>
+                                                                    <ul class="dropdown-menu" style=display:block>
+                                        <li>
+                                            <a class="" href="pending-offersfr.html" tabindex="-1">Offres en attente</a>                                        </li>
+                                        <li>
+                                            <a class="" href="listed-propertiesfr.html" tabindex="-1">Propriétés répertoriées</a>                                        </li>
+                                        <li>
+                                            <a class="active" href="schedule-visitsfr.html" tabindex="-1">Visites programmées</a>                                        </li>
+                                    </ul>
+                                    
+                            </li>
+                        </ul>
+                    </li>
+                    
+            </ul>
+        </div>
+</nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username" />
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd" />
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="../images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </header>
+
+        
+        <section class="block sr-page-main sr-property-tabs">
+    <div class="container">
+		<ul class = "nav nav-pills">
+    <li class = "">
+        <a href="pending-offersfr.html">Offres</a>    </li>
+    <li class="">
+        <a href="listed-propertiesfr.html">Propriétés répertoriées</a>    </li>
+    <li class="active">
+        <a href="schedule-visitsfr.html">Visites programmées</a>    </li>
+</ul>
+        <div class="block tab-content">
+            <div id="schedule-visits-tab" class="schedule-visits-tab tab-pane fade in active">
+                <div class="block property-tab-heading">
+					                    <h3>Bonjour Landlord ! Vous avez <span>0 </span> visites programmées</h3>
+                </div>
+                <div class="block property-tab-content">
+                    <div class="tab-content-main">
+                        <div class="tab-content-left">
+                            <div class="block tc-left-inner">
+								<div id="request-data" class="request-data" data-pjax="true"><div class="sr-emptytext">Aucune propriété trouvée.</div></div>                            </div>
+                        </div>
+						<form id="w0" action="schedule-visitsfr.html" method="GET" data-pjax>                        <div class="tab-content-right">
+                            <div class="block tc-right-inner">
+                                <div class="block tc-searchbox">
+                                    <div class="form-group input-field">
+										<div class="form-group field-propertyvisitingschedulevisitorsearch-search_schedule">
+<label class="" for="propertyvisitingschedulevisitorsearch-search_schedule">Rechercher</label><input type="text" id="propertyvisitingschedulevisitorsearch-search_schedule" class="form-control" name="PropertyVisitingScheduleVisitorSearch[search_schedule]" value="" autocomplete="off"><p class="help-block help-block-error"></p>
+</div>                                    </div>
+                                    <button type="submit" class="search-btn" >
+										<img src="../images/icons/search-icon.svg" alt="">                                    </button>
+                                </div>
+                                <div class="block text-right tc-links">
+                                    <a href="javascript:void(0);" class="delete-offer disabled">Rejeter</a>
+                                    <!--Disabling the select all option for now, since it presently doesn't do anything-->
+                                    <!--<a href="javascript:void(0);" class="selectall-offer" data-action="select">Tout sélectionner</a>-->
+                                </div>
+
+
+
+								<div id="request-offer-data" class="request-offer-data" data-pjax="true"><div class="sr-emptytext">Aucune visite trouvée.</div></div>                            </div>
+                        </div>
+						</form>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    var delete_url = 'delete-schedule-visits';
+    var property = '';
+</script>  
+    </div>
+    <footer class="footer-main">
+    <div class="footer-inner">
+        <div class="container-fluid">
+            <div class="footer-left">
+                <div class="brand">
+                     SkyRent
+                 </div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="../indexfr.html">Accueil</a>                    </li>
+                    <li>
+                        <a href="../about-usfr.html">À propos de nous</a>                    </li>
+                    <li>
+                        <a href="../how-it-worksfr.html">Comment ça marche</a>                    </li>
+                    <li>
+                        <a href="../contact-usfr.html">Nous contacter</a>                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="../images/skyrent-logo.png" alt="">                </div>
+                <div class="copyright">
+                     Copyright ©2021 SkyRent Inc Tous droits réservés.
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="privacy-policy">
+                    <a href="../privacy-policyfr.html">Politique de confidentialité</a>                    <span></span>
+                    <a href="../terms-of-usefr.html">Conditions d'utilisation</a>                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <div class="modal sr-modal fade" id="ajaxModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal sr-modal fade" id="ajaxModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+        <script src="../assets/dd593c97/jquery.js"></script>
+<script src="../assets/1366a38b/yii.js"></script>
+<script src="../assets/1366a38b/yii.validation.js"></script>
+<script src="../assets/1366a38b/yii.activeForm.js"></script>
+<script src="../assets/48cbc7e5/js/bootstrap.js"></script>
+<script src="../js/jquery.fancybox.pack.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<script src="../js/owl.carousel.min.js"></script>
+<script src="../js/owl.carousel2.thumbs.min.js"></script>
+<script src="../js/mdb.min.js"></script>
+<script src="../js/slick.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap-datepicker.min.js"></script>
+<script src="../js/jquery.blockUI.js"></script>
+<script src="../js/bootbox/bootbox.min.js"></script>
+<script src="../js/form-serialize-object.js"></script>
+<script src="../js/sr_customfr.js"></script>
+<script src="../js/html5-form-validation-polyfill.js"></script>
+<script src="../js/agreement-form.js"></script>
+<script src="../js/custom-aclfr.js"></script>
+<script src="../js/checkout.js"></script>
+<script>jQuery(function ($) {
+jQuery('#w0').yiiActiveForm([{"id":"propertyvisitingschedulevisitorsearch-search_schedule","name":"search_schedule","container":".field-propertyvisitingschedulevisitorsearch-search_schedule","input":"#propertyvisitingschedulevisitorsearch-search_schedule","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);}}], []);
+    $(document).ready(function (e) {
+            
+            $(document).on('click','.create-link',function(e){
+                e.preventDefault();
+                //console.log($(this).attr('href'));
+                console.log(window.location.href)
+        
+                var text = window.location.href;
+                var newSrc = $(this).attr('attr-key');
+                var newText = text.replace(/(property=).*?(&)/,'$1' + newSrc + '$2');
+                newText=removeURLParameter(newText,'dp-1-page');
+                newText=removeURLParameter(newText,'dp-1-per-page');
+                newText=removeURLParameter(newText,'PropertyVisitingScheduleVisitorSearch[search_schedule]');
+                console.log(newText);
+                window.location=newText;
+        
+            });
+                
+            
+            function removeURLParameter(url, parameter) {
+                //prefer to use l.search if you have a location/link object
+                var urlparts= url.split('?');   
+                if (urlparts.length>=2) {
+
+                    var prefix= encodeURIComponent(parameter)+'=';
+                    var pars= urlparts[1].split(/[&;]/g);
+
+                    //reverse iteration as may be destructive
+                    for (var i= pars.length; i-- > 0;) {    
+                        //idiom for string.startsWith
+                        if (pars[i].lastIndexOf(prefix, 0) !== -1) {  
+                            pars.splice(i, 1);
+                        }
+                    }
+
+                    return urlparts[0] + (pars.length > 0 ? '?' + pars.join('&') : '');
+                }
+                return url;
+            } 
+                
+        
+           $(document).on('click', '.offer_chk', function () {
+               var len = jQuery('#request-offer-data input[type=checkbox].offer_chk:checked').length;
+               
+               var action = $('.selectall-offer').attr("data-action");
+               
+        
+               if (len > 0) {                                                    
+                  $('.delete-offer').removeClass('disabled');
+                  
+               } else {
+                  $('.delete-offer').addClass('disabled');
+                  $('.selectall-offer').attr("data-action","select");
+                  $('.selectall-offer').text("Tout sélectionner");
+
+               }
+           });
+            
+          $(document).on('click', '.delete-offer', function () {
+            
+                bootbox.confirm({
+                    message: "Êtes-vous sûr de vouloir rejeter les offres sélectionnées ?",
+                    buttons: {
+                        confirm: {
+                            label: 'Oui',
+                            className: 'btn-primary'
+                        },
+                        cancel: {
+                            label: 'Non',
+                            className: 'btn-danger'
+                        }
+                    },
+                    callback: function (result) {
+                        if(result){
+                        var selectedOffers = [];
+                        $.each($("#request-offer-data input[type=checkbox].offer_chk:checked"), function () {
+                            selectedOffers.push($(this).data('id'));
+                        });
+                        $.ajax({
+                            method: 'POST',
+                            dataType:'json',
+                            url: delete_url,
+                            data: {_selectedSchedules:selectedOffers},
+                            success: function (response) 
+                            { 
+                                var url = window.location.href;
+                                url=removeURLParameter(url,'dp-1-page');
+                                url=removeURLParameter(url,'dp-1-per-page');
+                                url=removeURLParameter(url,'PropertyVisitingScheduleVisitorSearch[search_schedule]');
+                                window.location=url;   
+                            }
+                        });
+                      }
+                    }
+                });  
+                return false;
+	  });
+        
+        $(document).on('click', '.selectall-offer', function () {
+                var action = $(this).attr("data-action");                
+                if(action=='select')
+                {
+                    $('input[name="offers"]').each(function() { 
+                            this.checked = true; 
+                    });
+                   var len = jQuery('#request-offer-data input[type=checkbox].offer_chk:checked').length;
+                   if (len > 0) 
+                   {
+                      $('.delete-offer').removeClass('disabled');
+                   }
+                   $(this).attr("data-action","deselect");
+                   $(this).text("Tout déselectionner");
+ 
+                }
+                else
+                {
+                    $('input[name="offers"]').each(function() { 
+                            this.checked = false; 
+                    });
+                   var len = jQuery('#request-offer-data input[type=checkbox].offer_chk:checked').length;
+                   $('.delete-offer').addClass('disabled');
+                   $(this).attr("data-action","select");
+                   $(this).text("Tout sélectionner");
+                }
+         
+            });
+
+        
+   
+    });
+jQuery('#property-filter-form2').yiiActiveForm([], []);
+});</script>        </body>
+
+    <script>
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                //message: '<h1><i class="fa fa-spinner fa-spin"></i></h1>',
+                message: `<div class="loaderImage"><img src="../images/loader.gif " alt=""></div>`,
+                css: {
+                    border: 'none',
+                    padding: '10px',
+                    backgroundColor: '#fff',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    background: 'none',
+                    opacity: 1,
+                    color: '#fff'
+                }
+            });
+        });
+
+        $(document).ajaxStop($.unblockUI);
+
+        $(document).ready(function () {
+            /* To clear pop up data after pop up close */
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#ajaxModel").html('');
+            });
+
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+        /* end */
+        $(document).ready(function () {
+            $.common.PathUrl = 'https://staging.skyrent.ca/';
+            $.common.init({
+                'baseUrl': 'https://staging.skyrent.ca/',
+                'admin': false,
+                'customLoaded': false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overlay').modal('show');
+            setTimeout(function () {
+                $('#overlay').modal('hide');
+            }, 20000);
+            $("#overlay .alert").animate({
+                opacity: 1.0
+            }, 20000).fadeOut("slow");
+        });
+    </script>
+    <style>
+        #overlay .alert {
+            border-radius: 30px 30px 30px 30px !important;
+        }
+    </style>
+
+    </html>
