@@ -5938,7 +5938,7 @@ input[type='number']::-webkit-outer-spin-button {
     padding: 15px 5px 15px;
     display: inline-block;
     width: 100%;
-    max-width: 320px;
+    max-width: 270px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -8118,7 +8118,7 @@ input[type="checkbox"].daycare-svg:checked + label:after {
     border-left: 1px solid grey;
     height: 40px;
     position: absolute;
-    margin-left: -150px;
+    margin-left: -110px;
     top: 0;
 }
 
