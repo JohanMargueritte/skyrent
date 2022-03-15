@@ -1,0 +1,884 @@
+    <!DOCTYPE html>
+
+    <html lang="fr-fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="icon" type="image/png" href="images/favicon.ico">
+        <title>SkyRent - Service de location</title>
+        <link href="assets/48cbc7e5/css/bootstrap.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/animate.css" rel="stylesheet">
+<link href="css/normalize.css" rel="stylesheet">
+<link href="css/owl.carousel.min.css" rel="stylesheet">
+<link href="css/ui-layoutfr.css" rel="stylesheet">
+<link href="css/homeSearchfr-trans.css" rel="stylesheet">
+<link href="css/ui-screen.css" rel="stylesheet">
+<link href="css/agreement-form.css" rel="stylesheet">
+<link href="css/listing-maps-acl.css" rel="stylesheet">
+<link href="css/custom-acl.css" rel="stylesheet">        <meta name="csrf-param" content="_srfrontendCSRF">
+<meta name="csrf-token" content="">
+                <script>
+            var os = navigator.platform;
+            document.cookie = "cuos=" + os;
+        </script>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return;
+                n = f.fbq = function () {
+                    n.callMethod ?
+                        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n;
+                n.push = n;
+                n.loaded = !0;
+                n.version = '2.0';
+                n.queue = [];
+                t = b.createElement(e);
+                t.async = !0;
+                t.src = v;
+                s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '485403209006216');
+            fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+                       src="https://www.facebook.com/tr?id=485403209006216&ev=PageView&noscript=1"/></noscript>
+        <!-- End Facebook Pixel Code -->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167595448-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167595448-1');
+        </script>
+        <!-- End Google Analytics -->
+
+        <!-- Start Script ReachLocal -->
+        <script type="text/javascript" src="https://cdn.rlets.com/capture_configs/2aa/8ba/637/f0a4876bbb260a72c7ab7d7.js" async="async"></script>
+        <!-- End Script ReachLocal -->
+        <script src="https://js.stripe.com/v3/"></script>
+                    <!--Start of watson Script-->
+            <script>
+                window.watsonAssistantChatOptions = {
+                    integrationID: "0517d608-000c-43d2-a2af-0822acef6008", // The ID of this integration.
+                    region: "eu-fr", // The region your integration is hosted in.
+                    serviceInstanceID: "8dbc97ee-45e6-456a-9483-a9c186b53845", // The ID of your service instance.
+                    onLoad: function(instance) { instance.render(); }
+                };
+                setTimeout(function(){
+                    const t=document.createElement('script');
+                    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                    document.head.appendChild(t);
+                });
+            </script>
+            <!--End of watson-->
+            </head>
+
+    <body class="" data-spy="scroll" data-target=".how-it-works-tabs-btns" data-offset="162">
+        <div class="bb-alert" style="display:none;">
+        <span>The examples populate this alert with dummy content</span>
+    </div>
+
+    <div class="h-100" style="height:100%;">
+        <header class="main-header">
+            <nav class="navbar navbar-default navbar-fixed-top skyrent-navbar index-navbar " id="index-navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="indexfr.html"><img src="images/skyrent-logo-home.png" alt=""></a>            <div id="headerSticky" class="search-header">
+                <div class="input-list-search">
+                    <form id="property-filter-form2" action="property/listingfr.html" method="GET">                    <input type="text" id="psf-location2" class="search-icon form-control" name="Psf[location]"  autocomplete="off" placeholder="Saisissez une adresse, un quartier, une ville ou un code postal" aria-invalid="false">
+                    <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div>                    <button id="search-btn-top" type="submit" class="btn home-slider-search-top btn-search-property vs waves-effect waves-light btn-search-header">
+                        <i class="fa fa-search"></i>
+                    </button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="nav-round-btn">
+                <a id="btn-popup-login" class="popuplink" href="indexfr.html">Se connecter</a>            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-index" aria-expanded="false" aria-controls="navbar-index"> <span class="sr-only">Afficher/masquer la navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar-index" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+
+                    <a href="about-usfr.html">À propos de nous</a>                </li>
+                <li>
+                    <a href="how-it-worksfr.html">Comment ça marche</a>                </li>
+                <!--  <li>
+					<a href="supportfr.html">Support</a>                </li> -->
+                <li>
+                    <a href="indexfr?id=contct.html#contactUsSection">Nous contacter</a>                </li>
+                
+
+                
+            </ul>
+        </div>
+</nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal fade sr-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Veuillez vous connecter</div>
+                        <div class="modal-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="login-username">Nom d'utilisateur</label>
+                            <input type="text" class="form-control" id="login-username" />
+                        </div>
+                        <div class="form-group input-field">
+                            <label for="login-pwd">Mot de passe</label>
+                            <input type="password" class="form-control" id="login-pwd" />
+                            <div class="pwd-showhide">
+                                <div class="pwd-icon active">
+                                    <img src="images/icons/eye-show.png" alt="">                                </div>
+                                <div class="pwd-icon pwd-show">
+                                    <img src="images/icons/eye-show.png" alt="">                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">Mot de passe oublié</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Se connecter</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Forgot Password Modal -->
+<div id="forgotPassModal" class="modal fade sr-modal fp-modal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-innerbox">
+                    <div class="modal-heading-main">
+                        <div class="modal-heading">Mot de passe oublié</div>
+                        <div class="modal-subheading">Veuillez saisir votre identifiant d'e-mail dans le champ ci-dessous pour obtenir un lien de réinitialisation du mot de passe.</div>
+                    </div>
+                    <div class="modal-form">
+                        <div class="form-group input-field">
+                            <label for="fp-email">E-mail</label>
+                            <input type="email" class="form-control" id="fp-email" />
+                        </div>
+                    </div>
+                    <div class="modal-form-btn">
+                        <div class="form-group modal-links"> <a href="#">S'identifier</a> <a href="#">S'enregistrer</a>
+                        </div>
+                        <div class="form-group">
+                            <div class="modal-footer-btns">
+                                <button type="submit" class="outline-btn-rounded">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </header>
+
+        
+        
+
+<section class="static-image-main-div">
+    <div class="col-sm-12 image-container-div" id="image-container-div">
+        <div class="main-image-div">
+            <div class="image-div">
+                <img src="images/main-image.png" alt="">            </div>
+            <div class="main-image-content main-search-wrapper">
+                <div class="main-search-heading">
+                    Vous cherchez une location ?
+                </div>
+                <div class="main-search-subheading">
+                    SkyRent permet aux locataires de parcourir et de filtrer des milliers</br>
+                    d'annonces via toute une gamme de critères, de configurer des visites</br>
+                    numériquement, de soumettre des offres de location en temps réel,</br>
+                    de signer un bail et de payer le loyer en toute sécurité.
+                </div>
+                <div class="input-list">
+                    <form id="property-filter-form1" action="property/listingfr.html" method="GET">                    <input type="text" id="psf-location1" class="search-icon form-control place-holder-size" name="Psf[location]"  autocomplete="off" placeholder="Saisissez une adresse" aria-invalid="false">
+                    <div class="form-group field-psf-location_hidden">
+<input type="hidden" id="psf-location_hidden" class="form-control" name="Psf[location_hidden]">
+</div><div class="form-group field-stno">
+<input type="hidden" id="stno" class="form-control" name="Psf[stno]" value="" data-geo="street_number">
+</div><div class="form-group field-route">
+<input type="hidden" id="route" class="form-control" name="Psf[route]" data-geo="route">
+</div><div class="form-group field-nehd">
+<input type="hidden" id="nehd" class="form-control" name="Psf[nehd]" data-geo="neighborhood">
+</div><div class="form-group field-sublocty">
+<input type="hidden" id="sublocty" class="form-control" name="Psf[sublocty]" data-geo="sublocality">
+</div><div class="form-group field-locty">
+<input type="hidden" id="locty" class="form-control" name="Psf[locty]" data-geo="locality">
+</div><div class="form-group field-reg">
+<input type="hidden" id="reg" class="form-control" name="Psf[reg]" data-geo="administrative_area_level_1">
+</div><div class="form-group field-pcode">
+<input type="hidden" id="pcode" class="form-control" name="Psf[pcode]" data-geo="postal_code">
+</div><div class="form-group field-is_banner">
+<input type="hidden" id="is_banner" class="form-control" name="Psf[is_banner]" value="1" data-geo="postal_code">
+</div><div class="form-group field-latitude">
+<input type="hidden" id="latitude" class="form-control" name="Psf[latitude]" data-geo="lat">
+</div><div class="form-group field-longitude">
+<input type="hidden" id="longitude" class="form-control" name="Psf[longitude]" data-geo="lng">
+</div>                    <button id="current-location-trigger" class="btn" type="button"><i class="fa fa-crosshairs" style="left: -172px;position: relative;"></i><div class="vl"></div></button>
+                    <button id="search-btn-main" class="btn home-slider-btn btn-search-property vs">
+                        <div class="about-btn popuplink" style="margin-top:0px; width: 150px">Rechercher</div>
+                    </button>
+                    </form>                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hp-howitworks">
+    <div class="howitwork-heading">
+        <span class="home-all-title">Comment ça marche ?</span>
+    </div>
+    <div class="howitwork-steps-cover">
+        <div class="steps">
+            <div class="container">
+                <div class="col-sm-3 how-it-works-new-tabs">
+                    <span class="title">1</span>
+                    <span class="subtitle">Trouver une location</span>
+                    <span class="description">Parcourez les annonces,</br>
+                        recherchez dans notre</br>
+                        vaste base de données en utilisant</br>
+                        une variété de critères.</span>
+                </div>
+
+                <div class="col-sm-3 how-it-works-new-tabs">
+                    <span class="title">2</span>
+                    <span class="subtitle">S'enregistrer</span>
+                    <span class="description">Devenez un locataire enregistré</br>
+                        en remplissant</br>
+                        les conditions de présélection</br>
+                        nécessaires.</span>
+                </div>
+
+                <div class="col-sm-3 how-it-works-new-tabs">
+                    <span class="title">3</span>
+                    <span class="subtitle">Réserver une visite</span>
+                    <span class="description">Fixez un rendez-vous</br>
+                        à partir du calendrier</br>
+                        pour visiter</br>
+                        votre propriété préférée.</span>
+                </div>
+
+                <div class="col-sm-3 how-it-works-new-tabs">
+                    <span class="title">4</span>
+                    <span class="subtitle">Soumettre une offre</span>
+                    <span class="description">Créez et soumettez une offre</br>
+                        de location directement au propriétaire,</br>
+                        qui vous répondra</br>
+                        dans les 48 heures.</span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="image-country-main">
+    <div class="">
+        <span class="home-all-title">Emplacements populaires</span>
+    </div>
+    <div class="row image-country-row-div">
+        <div class="col-sm-4 home-page-new-image">
+            <div class="main-image-div">
+                <div class="new-image-div">
+                <img src="images/Toronto.jpg" alt="">                </div>
+            </div>
+            <span><h5>Toronto</h5></span>
+            <span><h6><a href="property/listing?Psf%5Bproperty_types%5D=&Psf%5Brent_mode%5D=&Psf%5Brent_max_price%5D=&Psf%5Brent_min_price%5D=100%3B15000&Psf%5Bproperty_size_unit%5D=&Psf%5Bproperty_size_to%5D=&Psf%5Bproperty_size_from%5D=100%3B5000&Psf%5Bbedrooms%5D=&Psf%5Bbathrooms%5D=&Psf%5Bparking_type%5D=&Psf%5Blocation%5D=Toronto%2C+ON%2C+Canada&Psf%5Blocation_hidden%5D=Toronto%2C+ON%2C+Canada&Psf%5Bstno%5D=&Psf%5Broute%5D=&Psf%5Bnehd%5D=&Psf%5Bsublocty%5D=&Psf%5Blocty%5D=Toronto&Psf%5Breg%5D=Ontario&Psf%5Bpcode%5D=&Psf%5Bis_banner%5D=&Psf%5Blatitude%5D=&Psf%5Blongitude%5D=&Psf%5Bsort_price%5D=ASC">Explorer plus ></a></h6></span>
+        </div>
+        <div class="col-sm-4  home-page-new-image">
+            <div class="main-image-div">
+                <div class="new-image-div">
+                    <img src="images/Vancouver.jpg" alt="">                </div>
+            </div>
+            <span><h5>Vancouver</h5></span>
+            <span><h6><a href="property/listing?Psf%5Bproperty_types%5D=&Psf%5Brent_mode%5D=&Psf%5Brent_max_price%5D=&Psf%5Brent_min_price%5D=100%3B15000&Psf%5Bproperty_size_unit%5D=&Psf%5Bproperty_size_to%5D=&Psf%5Bproperty_size_from%5D=100%3B5000&Psf%5Bbedrooms%5D=&Psf%5Bbathrooms%5D=&Psf%5Bparking_type%5D=&Psf%5Blocation%5D=Toronto%2C+ON%2C+Canada&Psf%5Blocation_hidden%5D=Toronto%2C+ON%2C+Canada&Psf%5Bstno%5D=&Psf%5Broute%5D=&Psf%5Bnehd%5D=&Psf%5Bsublocty%5D=&Psf%5Blocty%5D=Toronto&Psf%5Breg%5D=Ontario&Psf%5Bpcode%5D=&Psf%5Bis_banner%5D=&Psf%5Blatitude%5D=&Psf%5Blongitude%5D=&Psf%5Bsort_price%5D=ASC">Explorer plus ></a></h6></span>
+        </div>
+        <div class="col-sm-4 home-page-new-image">
+            <div class="main-image-div">
+                <div class="new-image-div">
+                    <img src="images/Montreal.jpg" alt="">                </div>
+            </div>
+            <span><h5>Montréal</h5></span>
+            <span><h6><a href="property/listing?Psf%5Bproperty_types%5D=&Psf%5Brent_mode%5D=&Psf%5Brent_max_price%5D=&Psf%5Brent_min_price%5D=100%3B100&Psf%5Bproperty_size_unit%5D=&Psf%5Bproperty_size_to%5D=&Psf%5Bproperty_size_from%5D=100%3B100&Psf%5Bbedrooms%5D=&Psf%5Bbathrooms%5D=&Psf%5Bparking_type%5D=&Psf%5Blocation%5D=Montreal%2C+QC%2C+Canada&Psf%5Blocation_hidden%5D=Vancouver%2C+BC%2C+Canada&Psf%5Bstno%5D=&Psf%5Broute%5D=&Psf%5Bnehd%5D=&Psf%5Bsublocty%5D=&Psf%5Blocty%5D=Montreal&Psf%5Breg%5D=Quebec&Psf%5Bpcode%5D=&Psf%5Bis_banner%5D=&Psf%5Blatitude%5D=45.5016889&Psf%5Blongitude%5D=-73.567256&Psf%5Bsort_price%5D=ASC">Explorer plus ></a></h6></span>
+        </div>
+    </div>
+    <div class="row image-country-row-div">
+        <div class="col-sm-4 home-page-new-image">
+            <div class="main-image-div">
+                <div class="new-image-div">
+                    <img src="images/Calgary.jpg" alt="">                </div>
+            </div>
+            <span><h5>Calgary</h5></span>
+            <span><h6><a href="property/listing?Psf%5Bproperty_types%5D=&Psf%5Brent_mode%5D=&Psf%5Brent_max_price%5D=&Psf%5Brent_min_price%5D=100%3B100&Psf%5Bproperty_size_unit%5D=&Psf%5Bproperty_size_to%5D=&Psf%5Bproperty_size_from%5D=100%3B100&Psf%5Bbedrooms%5D=&Psf%5Bbathrooms%5D=&Psf%5Bparking_type%5D=&Psf%5Blocation%5D=Calgary%2C+AB%2C+Canada&Psf%5Blocation_hidden%5D=Calgary&Psf%5Bstno%5D=&Psf%5Broute%5D=&Psf%5Bnehd%5D=&Psf%5Bsublocty%5D=&Psf%5Blocty%5D=Calgary&Psf%5Breg%5D=Alberta&Psf%5Bpcode%5D=&Psf%5Bis_banner%5D=1&Psf%5Blatitude%5D=51.04473309999999&Psf%5Blongitude%5D=-114.0718831&Psf%5Bsort_price%5D=ASC">Explorer plus ></a></h6></span>
+        </div>
+        <div class="col-sm-4 home-page-new-image">
+            <div class="main-image-div">
+                <div class="new-image-div">
+                    <img src="images/Halifax.jpg" alt="">                </div>
+            </div>
+            <span><h5>Halifax</h5></span>
+            <span><h6><a href="property/listing?Psf%5Bproperty_types%5D=&Psf%5Brent_mode%5D=&Psf%5Brent_max_price%5D=&Psf%5Brent_min_price%5D=100%3B100&Psf%5Bproperty_size_unit%5D=&Psf%5Bproperty_size_to%5D=&Psf%5Bproperty_size_from%5D=100%3B100&Psf%5Bbedrooms%5D=&Psf%5Bbathrooms%5D=&Psf%5Bparking_type%5D=&Psf%5Blocation%5D=Halifax%2C+NS%2C+Canada&Psf%5Blocation_hidden%5D=Montreal%2C+QC%2C+Canada&Psf%5Bstno%5D=&Psf%5Broute%5D=&Psf%5Bnehd%5D=&Psf%5Bsublocty%5D=&Psf%5Blocty%5D=Halifax&Psf%5Breg%5D=Nova+Scotia&Psf%5Bpcode%5D=&Psf%5Bis_banner%5D=&Psf%5Blatitude%5D=44.6475811&Psf%5Blongitude%5D=-63.5727683&Psf%5Bsort_price%5D=ASC">Explorer plus ></a></h6></span>
+        </div>
+        <div class="col-sm-4 home-page-new-image">
+            <div class="main-image-div">
+                <div class="new-image-div">
+                    <img src="images/Edmonton.jpg" alt="">                </div>
+            </div>
+            <span><h5>Edmonton</h5></span>
+            <span><h6><a href="property/listing?Psf%5Bproperty_types%5D=&Psf%5Brent_mode%5D=&Psf%5Brent_max_price%5D=&Psf%5Brent_min_price%5D=100%3B100&Psf%5Bproperty_size_unit%5D=&Psf%5Bproperty_size_to%5D=&Psf%5Bproperty_size_from%5D=100%3B100&Psf%5Bbedrooms%5D=&Psf%5Bbathrooms%5D=&Psf%5Bparking_type%5D=&Psf%5Blocation%5D=Edmonton%2C+AB%2C+Canada&Psf%5Blocation_hidden%5D=Halifax%2C+NS%2C+Canada&Psf%5Bstno%5D=&Psf%5Broute%5D=&Psf%5Bnehd%5D=&Psf%5Bsublocty%5D=&Psf%5Blocty%5D=Edmonton&Psf%5Breg%5D=Alberta&Psf%5Bpcode%5D=&Psf%5Bis_banner%5D=&Psf%5Blatitude%5D=53.5461245&Psf%5Blongitude%5D=-113.4938229&Psf%5Bsort_price%5D=ASC">Explorer plus ></a></h6></span>
+        </div>
+    </div>
+</section>
+<section class="property-list renter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <div class="renter-benefit-title">
+                    Avantages pour les locataires :
+                </div>
+                <div class="about-list">
+                    <div class="renter-benefit-about-list-container">
+                        <div class="mb-50">
+                            <i><svg viewBox="0 0 24 24" class="renter-benefit-validate"><path d="M23.5,0.499l-16.5,23l-6.5-6.5"></path></svg></i>
+                                <span class="renter-benefit-subtitle mb-50">Rechercher avec filtrage avancé</span><br/>
+                            <div class="renter-benefit-description col-sm-8">Filtrez des milliers de propriétés locatives disponibles en utilisant une variété de critères tels que le montant du loyer, la superficie, le nombre de chambres, les propriétés fumeurs et les propriétés acceptant les animaux domestiques.</div>
+                        </div>
+
+                        <div class="mb-50">
+                            <i><svg viewBox="0 0 24 24" class="renter-benefit-validate"><path d="M23.5,0.499l-16.5,23l-6.5-6.5"></path></svg></i>
+                            <span class="renter-benefit-subtitle">Réserver des visites</span><br/>
+                            <div class="renter-benefit-description col-sm-12">Fixez des rendez-vous de visite.</div>
+                        </div>
+
+                        <div class="mb-50">
+                            <i><svg viewBox="0 0 24 24" class="renter-benefit-validate"><path d="M23.5,0.499l-16.5,23l-6.5-6.5"></path></svg></i>
+                            <span class="renter-benefit-subtitle">Sécuriser facilement une propriété souhaitée</span><br/>
+                            <div class="renter-benefit-description col-sm-7">Complétez le processus de préqualification, vous aidant à sécuriser rapidement une propriété souhaitée sur les marchés les plus demandés. Utilisez l'outil d'évaluation de crédit de SkyRent pour augmenter vos chances d'obtenir la place.</div>
+                        </div>
+
+                        <div class="mb-50">
+                            <i><svg viewBox="0 0 24 24" class="renter-benefit-validate"><path d="M23.5,0.499l-16.5,23l-6.5-6.5"></path></svg></i>
+                            <span class="renter-benefit-subtitle">Transactions transparentes</span><br/>
+                            <div class="renter-benefit-description col-sm-7">Déposez une offre de location en temps réel et obtenez une réponse sous 48h. Versez un accompte en ligne en utilisant une carte de crédit ou de débit. Profitez aussi de l'assurance locataire et du service internet économiques de SkyRent.</div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12  col-md-12">
+                            <a id="btn-popup-login" class="about-btn" href="renter/rent-propertyfr.html" style="border:none;">TROUVER UNE PROPRIÉTÉ</a>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="property-list landlord">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <div class="renter-benefit-title">
+                    Avantages pour les propriétaires :
+                </div>
+                <div class="about-list">
+                    <div class="landlord-benefit-about-list-container">
+                        <div class="mb-50">
+                            <i><svg viewBox="0 0 24 24" class="renter-benefit-validate"><path d="M23.5,0.499l-16.5,23l-6.5-6.5"></path></svg></i>
+                            <span class="renter-benefit-subtitle mb-50">Répertorier facilement vos propriétés disponibles</span><br/>
+                            <div class="renter-benefit-description col-sm-9">Mettez en ligne des photos et des détails sur votre propriété via notre portail sécurisé. Définissez aussi des plages horaires pour les rendez-vous de visite qui correspondent à vos disponibilités.</div>
+                        </div>
+
+                        <div class="mb-50">
+                            <i><svg viewBox="0 0 24 24" class="renter-benefit-validate"><path d="M23.5,0.499l-16.5,23l-6.5-6.5"></path></svg></i>
+                            <span class="renter-benefit-subtitle">Rencontrer des locataires qualifiés</span><br/>
+                            <div class="renter-benefit-description col-sm-12">Rencontrez des locataires potentiels qualifiés qui ont passé le processus de présélection.</div>
+                        </div>
+
+                        <div class="mb-50">
+                            <i><svg viewBox="0 0 24 24" class="renter-benefit-validate"><path d="M23.5,0.499l-16.5,23l-6.5-6.5"></path></svg></i>
+                            <span class="renter-benefit-subtitle">Accepter facilement les offres</span><br/>
+                            <div class="renter-benefit-description col-sm-7">Recevez des offres en temps réel, ainsi qu'un historique de location vérifié et l'évaluation du crédit SkyRent des candidats. Acceptez des offres ou faites des contre-propositions à votre gré.</div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12  col-md-12">
+
+                            <a id="btn-popup-login" class="about-btn popuplink" href="indexfr.html">RÉPERTORIER UNE PROPRIÉTÉ</a>                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="partners-main hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div class="home-partner-title">
+                    Partenaires
+                </div>
+                <div class="home-sec2-info">
+                    Lorsque vous louez via SkyRent, vous avez accès à des offres exceptionnelles de nos partenaires, telles que des réductions, des bonus gratuits et des conditions spéciales.<br>
+                    Notre liste de partenaires s'étend et comprend :
+                </div>
+            </div>
+        </div>
+        <div class="row partners-box">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="partner-img">
+                    <img src="images/partner1.png" alt="">                </div>
+                <div class="partner-title">
+                    Goodlife Fitness
+                </div>
+                <div class="partner-info">
+                    Profitez d'un mois gratuit et d'un tarif mensuel réduit
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="partner-img">
+                    <img src="images/partner2.png" alt="">                </div>
+                <div class="partner-title">
+                    Telus
+                </div>
+                <div class="partner-info">
+                    Rabais sur les services sans fil et Internet
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="partner-img">
+                    <img src="images/partner3.png" alt="">                </div>
+                <div class="partner-title">
+                    Hub International
+                </div>
+                <div class="partner-info">
+                    Fournit les taux d'assurance locataire les plus bas du marché
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <div class="partner-img">
+                    <img src="images/partner4.png" alt="">                </div>
+                <div class="partner-title">
+                    Enstream
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="SkyRent-about-bottom" style="background-color: #f3f3f3;">
+    <div class="container">
+        <div class="dis-row bottomgap">
+            <div class="dis-cell logo-cover">
+                <div class="home-left-logo">
+                    <img src="images/skyrent-logo-home.png" alt="">                </div>
+            </div>
+            <div class="dis-cell">
+                <div class="home-bottom-text-cover">
+                    <div class="home-bottom-text">
+                        <span>SkyRent </span>est le premier marché en ligne de locations au Canada qui permet aux locataires potentiels non seulement de parcourir et de filtrer des milliers d'annonces via une série de critères, mais également de fixer des rendez-vous de visite et de soumettre des offres de location en temps réel. Que vous soyez un propriétaire cherchant à promouvoir vos annonces ou un locataire à la recherche de votre location idéale, SkyRent rend le processus rapide, facile, sécurisé et fiable.
+                    </div>
+                    <div class="home-bottom-info">
+                        <div class="info-1">
+                            <span class="home-bottom-icon"><img src="images/icons/ihomeabt1.png" alt=""></span>
+                            <span class="info-text-1">Suite 200, 60 Atlantic Avenue<br>Toronto, Ontario, M6K 1X9</span>
+                        </div>
+                        <div class="info text-center">
+                            <span class="home-bottom-icon"><img src="images/icons/ihomeabt2.png" alt=""></span>
+                            1-888-302-6202
+                        </div>
+                        <div class="info text-center">
+                            <span class="home-bottom-icon"><img src="images/icons/ihomeabt3.png" alt=""></span>
+                            Skyrent.ca
+                        </div>
+                        <div class="info text-right">
+                            <span class="home-bottom-icon"><img src="images/icons/ihomeabt4.png" alt=""></span>
+                            info@skyrent.ca
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map-places">
+        </div>
+    </div>
+</section>
+	    </div>
+    <footer class="footer-main">
+    <div class="footer-inner">
+        <div class="container-fluid">
+            <div class="footer-left">
+                <div class="brand">
+                     SkyRent
+                 </div>
+                <ul class="footer-links">
+                    <li>
+                        <a href="indexfr.html">Accueil</a>                    </li>
+                    <li>
+                        <a href="about-usfr.html">À propos de nous</a>                    </li>
+                    <li>
+                        <a href="how-it-worksfr.html">Comment ça marche</a>                    </li>
+                    <li>
+                        <a href="indexfr?id=contct.html#contactUsSection">Nous contacter</a>                    </li>
+                </ul>
+                <div class="logo">
+                    <img src="images/skyrent-logo.png" alt="">                </div>
+                <div class="copyright">
+                     Copyright ©2021 SkyRent Inc Tous droits réservés.
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="privacy-policy">
+                    <a href="privacy-policyfr.html">Politique de confidentialité</a>                    <span></span>
+                    <a href="terms-of-usefr.html">Conditions d'utilisation</a>                </div>
+            </div>
+        </div>
+    </div>
+</footer>    <div class="modal sr-modal fade" id="ajaxModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+    <div class="modal sr-modal fade" id="ajaxModel1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+        </div>
+    </div>
+        <script src="assets/dd593c97/jquery.js"></script>
+<script src="assets/1366a38b/yii.js"></script>
+<script src="assets/1366a38b/yii.activeForm.js"></script>
+<script src="js/markerclusterer.js"></script>
+<script src="js/jquery.geocomplete.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBeoRc8BuP4FOqz2zL3pu75-pJKyxVlcdw&libraries=places&language=en.js"></script>
+<script src="assets/48cbc7e5/js/bootstrap.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl.carousel2.thumbs.min.js"></script>
+<script src="js/mdb.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-datepicker.min.js"></script>
+<script src="js/jquery.blockUI.js"></script>
+<script src="js/bootbox/bootbox.min.js"></script>
+<script src="js/form-serialize-object.js"></script>
+<script src="js/sr_customfr.js"></script>
+<script src="js/html5-form-validation-polyfill.js"></script>
+<script src="js/agreement-form.js"></script>
+<script src="js/custom-aclfr.js"></script>
+<script src="js/checkout.js"></script>
+<script>jQuery(function ($) {
+jQuery('#property-filter-form1').yiiActiveForm([], []);
+window.onscroll = function() {myFunction()};
+
+var searcgbar = document.getElementById("psf-location1");
+var header = document.getElementById("headerSticky");
+var sticky = searcgbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > 500) {
+    header.classList.add("sticky-search");
+  } else {
+    header.classList.remove("sticky-search");
+  }
+}
+
+ $(document).scroll(function() {
+     const element = document.getElementById("image-container-div");
+     console.log(element.clientHeight);
+       if($(window).scrollTop() >  element.clientHeight){
+
+        $("#index-navbar").css("background","#dcf4fd");
+
+       }else if($(window).scrollTop() < element.clientHeight){
+
+        $("#index-navbar").css("background","transparent");
+
+       }
+});
+
+
+ $(document).ready(function (e) {
+    let formSubmit = false;
+
+    $("form#property-filter-form1, form#property-filter-form2").on('submit', function(e) {
+        if (!formSubmit) {
+            e.preventDefault();
+            return false;
+        }
+    });
+
+    const input = document.getElementById("psf-location1");
+    const input2 = document.getElementById("psf-location2");
+
+    const options = {
+        componentRestrictions: { country: "CA" },
+        strictBounds: false,
+        types: ["geocode", "establishment"],
+    };
+
+    const autocomplete = new google.maps.places.Autocomplete(input,options);
+    const autocomplete2 = new google.maps.places.Autocomplete(input2,options);
+    const autocompleteService = new google.maps.places.AutocompleteService();
+
+    const getPlacePredictions = (predictions, status) => {
+        $('#psf-location1').val(predictions[0].description);
+        $('#psf-location2').val(predictions[0].description);
+        const placeId = predictions[0].place_id;
+        const map = document.getElementById("map-places");
+        const placeService = new google.maps.places.PlacesService(map);
+        const details = placeService.getDetails({placeId}, (res, status) => {
+            $('#property-filter-form1 #stno').val('');
+            $('#property-filter-form1 #route').val('');
+            $('#property-filter-form1 #nehd').val('');
+            $('#property-filter-form1 #sublocty').val('');
+            $('#property-filter-form1 #locty').val('');
+            $('#property-filter-form1 #reg').val('');
+            $('#property-filter-form1 #pcode').val('');
+            $('#property-filter-form2 #stno').val('');
+            $('#property-filter-form2 #route').val('');
+            $('#property-filter-form2 #nehd').val('');
+            $('#property-filter-form2 #sublocty').val('');
+            $('#property-filter-form2 #locty').val('');
+            $('#property-filter-form2 #reg').val('');
+            $('#property-filter-form2 #pcode').val('');
+            $('#property-filter-form1 #latitude').val(res.geometry.location.lat());
+            $('#property-filter-form1 #longitude').val(res.geometry.location.lng());
+            $('#property-filter-form2 #latitude').val(res.geometry.location.lat());
+            $('#property-filter-form2 #longitude').val(res.geometry.location.lng());
+            res.address_components.forEach(component => {
+                const val = component.long_name;
+                switch(component.types[0]) {
+                    case "street_number":
+                        $('#property-filter-form1 #stno').val(val);
+                        $('#property-filter-form2 #stno').val(val);
+                        break;
+                    case "route":
+                        $('#property-filter-form1 #route').val(val);
+                        $('#property-filter-form2 #route').val(val);
+                        break;
+                    case "sublocality_level_1":
+                        $('#property-filter-form1 #sublocty').val(val);
+                        $('#property-filter-form2 #sublocty').val(val);
+                        break;
+                    case "locality":
+                        $('#property-filter-form1 #locty').val(val);
+                        $('#property-filter-form2 #locty').val(val);
+                        break;
+                    case "administrative_area_level_1":
+                        $('#property-filter-form1 #reg').val(val);
+                        $('#property-filter-form2 #reg').val(val);
+                        break;
+                    case "postal_code":
+                        $('#property-filter-form1 #pcode').val(val);
+                        $('#property-filter-form2 #pcode').val(val);
+                        break;
+                }
+            });
+
+            formSubmit = true;
+            setTimeout(function() {
+                $("#property-filter-form1").submit();
+            }, 800);
+        });
+    }
+
+    $("#search-btn-main").click(function() {
+        let value = $("#psf-location1").val();
+        if (value) {
+            formSubmit = false;
+            autocompleteService.getPlacePredictions({ input: value,componentRestrictions: { country: "CA" },
+            fields: ["address_components", "geometry"]},getPlacePredictions);
+        } else {
+            $('#stno').val('');
+			$('#route').val('');
+			$('#nehd').val('');
+			$('#sublocty').val('');
+			$('#locty').val('');
+			$('#reg').val('');
+			$('#pcode').val('');
+            formSubmit = true;
+            $("form#property-filter-form1").submit();
+        }
+    });
+
+    $("#search-btn-top").click(function() {
+        let value = $("#psf-location2").val();
+        if (value) {
+            formSubmit = false;
+            autocompleteService.getPlacePredictions({ input: value,componentRestrictions: { country: "CA" },
+            fields: ["address_components", "geometry"]},getPlacePredictions);
+        } else {
+            $('#stno').val('');
+			$('#route').val('');
+			$('#nehd').val('');
+			$('#sublocty').val('');
+			$('#locty').val('');
+			$('#reg').val('');
+			$('#pcode').val('');
+            formSubmit = true;
+            $("form#property-filter-form2").submit();
+        }
+    });
+    
+    $("#psf-location1, #psf-location2").on('change keyup paste', function (event) {
+            let value=$(this).val();
+            let delayInMilliseconds = 800; //1 second
+            formSubmit = false;
+			if(!value)
+			{
+				$('#stno').val('');
+				$('#route').val('');
+				$('#nehd').val('');
+				$('#sublocty').val('');
+				$('#locty').val('');
+				$('#reg').val('');
+				$('#pcode').val('');
+			}
+	
+			if (event.keyCode == 13) {
+                if (!value) {
+                    formSubmit = true;
+                    $("form#property-filter-form1").submit();
+                }
+                else {
+                    formSubmit = false;
+                    autocompleteService.getPlacePredictions({ input: value, componentRestrictions: { country: "CA" },
+                    fields: ["address_components", "geometry"]}, getPlacePredictions);
+                }
+			}
+		});
+
+	$('body').on('beforeSubmit', 'form#contact-form', function () {
+		var form = $(this);
+		// return false if form still have some validation errors
+		if (form.find('.has-error').length) {
+			 return false;
+		}
+		// submit form
+		$.ajax({
+			 url: form.attr('action'),
+			 type: 'post',
+			 data: form.serialize(),
+             dataType:'json',
+			 success: function (response) {
+				Example.show(response.msg,response.status);				
+				if(response.status){
+					$('#contactus-name').val('');
+					$('#contactus-email').val('');
+					$('#contactus-message').val('');					
+				}
+			 }
+		});
+		return false;
+	});	
+});	
+jQuery('#property-filter-form2').yiiActiveForm([], []);
+});</script>        </body>
+
+    <script>
+        $(document).ajaxStart(function () {
+            $.blockUI({
+                //message: '<h1><i class="fa fa-spinner fa-spin"></i></h1>',
+                message: `<div class="loaderImage"><img src="images/loader.gif " alt=""></div>`,
+                css: {
+                    border: 'none',
+                    padding: '10px',
+                    backgroundColor: '#fff',
+                    '-webkit-border-radius': '10px',
+                    '-moz-border-radius': '10px',
+                    background: 'none',
+                    opacity: 1,
+                    color: '#fff'
+                }
+            });
+        });
+
+        $(document).ajaxStop($.unblockUI);
+
+        $(document).ready(function () {
+            /* To clear pop up data after pop up close */
+            $(".modal").on("hidden.bs.modal", function () {
+                $("#ajaxModel").html('');
+            });
+
+            setTimeout(function () {
+                $('.alert').fadeOut('slow');
+            }, 4000);
+        });
+        /* end */
+        $(document).ready(function () {
+            $.common.PathUrl = 'https://staging.skyrent.ca/';
+            $.common.init({
+                'baseUrl': 'https://staging.skyrent.ca/',
+                'admin': false,
+                'customLoaded': false,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#overlay').modal('show');
+            setTimeout(function () {
+                $('#overlay').modal('hide');
+            }, 20000);
+            $("#overlay .alert").animate({
+                opacity: 1.0
+            }, 20000).fadeOut("slow");
+        });
+    </script>
+    <style>
+        #overlay .alert {
+            border-radius: 30px 30px 30px 30px !important;
+        }
+    </style>
+
+    </html>
