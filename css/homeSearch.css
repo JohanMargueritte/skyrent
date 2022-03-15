@@ -1,7 +1,7 @@
 .main-image-content {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 50%;
+  left: 30%;
   -moz-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -10,15 +10,19 @@
   text-align: center;
   width: 100%;
 }
+.home-page-new-image{
+  margin-bottom: 20px;
+}
 .main-image-div {
 }
 .main-search-heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
-  color: white;
+  font-size: 51px;
+  color: black;
   font-weight: 600;
+  text-align: left;
 }
 .main-search-heading span {
   width: 10px;
@@ -28,10 +32,14 @@
   border-radius: 50%;
 }
 .main-search-subheading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 24px;
-  color: white;
+  color: black;
   font-family: 'Roboto Condensed', sans-serif;
   margin-bottom: 30px;
+  text-align: left;
 }
 .image-container-div {
   position: relative;
@@ -44,7 +52,7 @@
   display: block;
   margin-top: -100px;
   margin-bottom: -100px;
-  height: 91vh;
+  height: 120vh;
   object-fit: cover;
 }
 
@@ -120,19 +128,25 @@ section.image-country-main .image-div {
   overflow: hidden;
   border-radius: 10px;
 }
+
+section.image-country-main .new-image-div {
+  max-height: 397px;
+  overflow: hidden;
+  border-radius: 10px;
+}
 .form-control:focus {
   border-color: inherit;
   box-shadow: initial;
 }
 .btn-search-property {
   position: absolute;
-  min-width: 100px;
+  min-width: 125px;
   top: 0px;
   right: 0px;
   height: 50px;
   font-size: 11px;
   border-radius: 0px;
-  padding: 0px 24px;
+  padding: 0px 7px;
   height: 100%;
   z-index: 100;
 }
@@ -178,18 +192,64 @@ nav.navbar.navbar-default.navbar-fixed-top.skyrent-navbar {
 .property-list {
   /*margin-top: 20px;*/
 }
+.renter-benefit-title{
+  margin-top: 40px;
+  color: black;
+  font-size: 48px;
+  font-weight: 700;
+}
+.renter-benefit-subtitle{
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+.renter-benefit-description{
+  font-size: 17px;
+  color: black;
+  padding-left: 36px;
+}
+.renter-benefit-validate{
+  fill:none;
+  height:16px;
+  stroke:rgba(0, 0, 0, 0.5);
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-width:2;
+  width:16px;
+  margin-right: 20px;
+}
 .property-list.renter {
-  background-color: #f0f0f0;
-  background-image: url(../images/backgroundImage-AsARenter-min.svg);
-  background-position: calc(100% + 80px) calc(100% + 150px);
+  background-color: #dcf4fd;
+  background-image: url(../images/renter-benefit.png);
+  background-position: calc(100% - 10px) calc(100% + 36px);
   background-repeat: no-repeat;
 }
 .property-list.landlord {
-  background-color: #1b4a6c;
-  background-image: url(../images/backgroundImage-AsALandlord-min.svg);
-  background-position: calc(100% + 40px) calc(100% + 240px);
+  background-color: white;
+  background-image: url(../images/landlord-benefit.png);
+  background-position: calc(100% - 60px) calc(100% + 144px);
   background-repeat: no-repeat;
 }
+@media only screen and (max-device-width: 767px) {
+
+  .property-list.renter {
+    background-image: none;
+  }
+  .property-list.landlord {
+    background-image: none;
+  }
+
+  .main-search-heading{
+    font-size: 23px!important;
+  }
+
+  .main-search-subheading{
+    font-size: 14px!important;
+  }
+
+}
+
+
 .content-property-list .col {
   margin-top: 15px;
 }
@@ -220,13 +280,14 @@ nav.navbar.navbar-default.navbar-fixed-top.skyrent-navbar {
 }
 .image-country-row-div {
   padding: 0;
-  margin: 0px;
 }
 .image-country-main .image-container-div.image-country {
   background: none;
 }
 .image-country-main {
   padding: 5px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 section.image-country-main h4 {
   font-size: 32px;
@@ -235,6 +296,27 @@ section.image-country-main h4 {
   text-transform: uppercase;
 }
 
+section.image-country-main h5 {
+  font-size: 22px;
+  color: Black;
+  font-weight: bold;
+}
+
+.renter-background-color{
+  background-color: #dcf4fd;
+}
+
+section.image-country-main h6 {
+  font-size: 15px;
+  color: #00b7ef;
+  font-weight: bold;
+}
+
+section.image-country-main a {
+  font-size: 15px;
+  color: #00b7ef;
+  font-weight: bold;
+}
 .image-div::before {
   position: absolute;
   left: 5px;
@@ -382,9 +464,13 @@ section.image-country-main h4 {
   }
   .main-image-content {
     top: 50%;
+    left: 50%;
+  }
+  .about-btn {
+    padding: 7px 5px 5px;
+    margin-top: -8px!important;
   }
 }
-
 .place-holder-size::placeholder {
   font-size: 1.5em;
 }

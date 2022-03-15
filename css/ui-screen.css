@@ -56,7 +56,7 @@
   }
 
   #property-amenities_list > div {
-    width: 32%;
+    /*width: 32%;*/
   }
   #property-property_type_id > div {
     width: 50%;
@@ -490,7 +490,7 @@
   #property-amenities_list > div,
   #property-storey_id > div,
   #property-ownership_id > div {
-    width: 31%;
+    /*width: 31%;*/
   }
   #property-property_type_id > div {
     width: 50%;

@@ -21,7 +21,7 @@
   font-family: 'Roboto Condensed', sans-serif;
 }
 #property-filter-form1 #search-btn-main {
-  position: static;
+  /*position: static;*/
 }
 #property-filter-form1 input[type='text']::placeholder {
   font-size: 16px;
@@ -32,7 +32,6 @@
   color: #00b7ef;
   background: transparent;
   position: relative;
-  right: 8px;
 }
 .main-search-wrapper .input-list {
   padding: 0;
